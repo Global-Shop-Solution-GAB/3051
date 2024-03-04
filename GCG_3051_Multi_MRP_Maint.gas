@@ -1,0 +1,864 @@
+Program.Sub.ScreenSU.Start
+gui.SS_Form1..create
+gui.SS_Form1..caption("Multi_MRP_Maint")
+gui.SS_Form1..size(2665,5445)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+gui.SS_Form1..position(0,0)
+gui.SS_Form1..event(unload,ss_form1_unload)
+gui.SS_Form1..alwaysontop(False)
+gui.SS_Form1..fontname("Arial")
+gui.SS_Form1..fontsize(8)
+gui.SS_Form1..forecolor(0)
+gui.SS_Form1..fontstyle(,,,,)
+gui.SS_Form1..BackColor(-2147483633)
+gui.SS_Form1..controlbox(True)
+gui.SS_Form1..maxbutton(False)
+gui.SS_Form1..minbutton(False)
+gui.SS_Form1..mousepointer(0)
+gui.SS_Form1..moveable(True)
+gui.SS_Form1..sizeable(False)
+gui.SS_Form1..ShowInTaskBar(True)
+gui.SS_Form1..titlebar(True)
+gui.SS_Form1.lbl_txtPart.create(label,"Part",True,1800,200,1,100,335,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtPart.defaultvalue("")
+gui.SS_Form1.lbl_txtPart.controlgroup(0)
+gui.SS_Form1.txtPart.create(textbox,"",True,1800,330,1,100,535,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtPart.defaultvalue("")
+gui.SS_Form1.txtPart.controlgroup(0)
+gui.SS_Form1.cmd_txtPart.create(button)
+gui.SS_Form1.cmd_txtPart.caption("^")
+gui.SS_Form1.cmd_txtPart.visible(True)
+gui.SS_Form1.cmd_txtPart.size(330,330)
+gui.SS_Form1.cmd_txtPart.zorder(0)
+gui.SS_Form1.cmd_txtPart.position(1985,535)
+gui.SS_Form1.cmd_txtPart.enabled(True)
+gui.SS_Form1.cmd_txtPart.fontname("Arial")
+gui.SS_Form1.cmd_txtPart.fontsize(8)
+gui.SS_Form1.cmd_txtPart.event(click,cmd_txtpart_click)
+gui.SS_Form1.cmd_txtPart.defaultvalue("")
+gui.SS_Form1.cmd_txtPart.controlgroup(0)
+gui.SS_Form1.lbl_txtSize.create(label,"Size",True,1800,200,1,100,950,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtSize.defaultvalue("")
+gui.SS_Form1.lbl_txtSize.controlgroup(0)
+gui.SS_Form1.txtSize.create(textbox,"",True,1800,330,1,100,1150,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtSize.defaultvalue("")
+gui.SS_Form1.txtSize.controlgroup(0)
+gui.SS_Form1.lbl_txtProcess.create(label,"Process Name",True,1800,200,1,100,1565,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtProcess.defaultvalue("")
+gui.SS_Form1.lbl_txtProcess.controlgroup(0)
+gui.SS_Form1.txtProcess.create(textbox,"",True,1800,330,1,100,1765,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtProcess.defaultvalue("")
+gui.SS_Form1.txtProcess.controlgroup(0)
+gui.SS_Form1.lbl_txtGrade.create(label,"Grade",True,1800,200,1,100,2180,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtGrade.defaultvalue("")
+gui.SS_Form1.lbl_txtGrade.controlgroup(0)
+gui.SS_Form1.txtGrade.create(textbox,"",True,1800,330,1,100,2380,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtGrade.defaultvalue("")
+gui.SS_Form1.txtGrade.controlgroup(0)
+gui.SS_Form1.lbl_txtLT.create(label,"Lead Time",True,1800,200,1,100,2795,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtLT.defaultvalue("")
+gui.SS_Form1.lbl_txtLT.controlgroup(0)
+gui.SS_Form1.txtLT.create(textbox,"",True,1800,330,1,100,2995,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtLT.defaultvalue("")
+gui.SS_Form1.txtLT.controlgroup(0)
+gui.SS_Form1.lbl_txtScrap.create(label,"Scrap",True,1800,200,1,100,3410,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtScrap.defaultvalue("")
+gui.SS_Form1.lbl_txtScrap.controlgroup(0)
+gui.SS_Form1.txtScrap.create(textbox,"",True,1800,330,1,100,3610,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtScrap.defaultvalue("")
+gui.SS_Form1.txtScrap.controlgroup(0)
+gui.SS_Form1.cmdSave.create(button)
+gui.SS_Form1.cmdSave.caption("Save")
+gui.SS_Form1.cmdSave.visible(True)
+gui.SS_Form1.cmdSave.size(1000,360)
+gui.SS_Form1.cmdSave.zorder(0)
+gui.SS_Form1.cmdSave.position(100,4025)
+gui.SS_Form1.cmdSave.enabled(True)
+gui.SS_Form1.cmdSave.fontname("Arial")
+gui.SS_Form1.cmdSave.fontsize(8)
+gui.SS_Form1.cmdSave.event(click,cmdsave_click)
+gui.SS_Form1.cmdSave.defaultvalue("")
+gui.SS_Form1.cmdSave.controlgroup(0)
+gui.SS_Form1.cmdEdit.create(button)
+gui.SS_Form1.cmdEdit.caption("Edit")
+gui.SS_Form1.cmdEdit.visible(True)
+gui.SS_Form1.cmdEdit.size(1000,360)
+gui.SS_Form1.cmdEdit.zorder(0)
+gui.SS_Form1.cmdEdit.position(100,4470)
+gui.SS_Form1.cmdEdit.enabled(True)
+gui.SS_Form1.cmdEdit.fontname("Arial")
+gui.SS_Form1.cmdEdit.fontsize(8)
+gui.SS_Form1.cmdEdit.event(click,cmdedit_click)
+gui.SS_Form1.cmdEdit.defaultvalue("")
+gui.SS_Form1.cmdEdit.controlgroup(0)
+gui.SS_Form1.txtPart.tabstop(true)
+gui.SS_Form1.txtPart.tabindex(2)
+gui.SS_Form1.cmd_txtPart.tabstop(true)
+gui.SS_Form1.cmd_txtPart.tabindex(3)
+gui.SS_Form1.txtSize.tabstop(true)
+gui.SS_Form1.txtSize.tabindex(4)
+gui.SS_Form1.txtProcess.tabstop(true)
+gui.SS_Form1.txtProcess.tabindex(5)
+gui.SS_Form1.txtGrade.tabstop(true)
+gui.SS_Form1.txtGrade.tabindex(7)
+gui.SS_Form1.txtLT.tabstop(true)
+gui.SS_Form1.txtLT.tabindex(8)
+gui.SS_Form1.txtScrap.tabstop(true)
+gui.SS_Form1.txtScrap.tabindex(9)
+gui.SS_Form1.cmdSave.tabstop(true)
+gui.SS_Form1.cmdSave.tabindex(10)
+gui.SS_Form1.cmdEdit.tabstop(true)
+gui.SS_Form1.cmdEdit.tabindex(11)
+
+
+gui.SS_Form2..create
+gui.SS_Form2..caption("Edit")
+gui.SS_Form2..size(2665,2340)
+gui.SS_Form2..minx(0)
+gui.SS_Form2..miny(0)
+gui.SS_Form2..position(0,0)
+gui.SS_Form2..event(unload,ss_form2_unload)
+gui.SS_Form2..alwaysontop(False)
+gui.SS_Form2..fontname("Arial")
+gui.SS_Form2..fontsize(8)
+gui.SS_Form2..forecolor(0)
+gui.SS_Form2..fontstyle(,,,,)
+gui.SS_Form2..BackColor(-2147483633)
+gui.SS_Form2..controlbox(True)
+gui.SS_Form2..maxbutton(False)
+gui.SS_Form2..minbutton(False)
+gui.SS_Form2..mousepointer(0)
+gui.SS_Form2..moveable(True)
+gui.SS_Form2..sizeable(False)
+gui.SS_Form2..ShowInTaskBar(True)
+gui.SS_Form2..titlebar(True)
+gui.SS_Form2.lbl_txtEditGrade.create(label,"Grade",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form2.lbl_txtEditGrade.defaultvalue("")
+gui.SS_Form2.lbl_txtEditGrade.controlgroup(0)
+gui.SS_Form2.txtEditGrade.create(textbox,"",True,1800,330,1,100,335,True,0,Arial,8,16777215,1)
+gui.SS_Form2.txtEditGrade.defaultvalue("")
+gui.SS_Form2.txtEditGrade.controlgroup(0)
+gui.SS_Form2.cmd_txtEditGrade.create(button)
+gui.SS_Form2.cmd_txtEditGrade.caption("^")
+gui.SS_Form2.cmd_txtEditGrade.visible(True)
+gui.SS_Form2.cmd_txtEditGrade.size(330,330)
+gui.SS_Form2.cmd_txtEditGrade.zorder(0)
+gui.SS_Form2.cmd_txtEditGrade.position(1985,335)
+gui.SS_Form2.cmd_txtEditGrade.enabled(True)
+gui.SS_Form2.cmd_txtEditGrade.fontname("Arial")
+gui.SS_Form2.cmd_txtEditGrade.fontsize(8)
+gui.SS_Form2.cmd_txtEditGrade.event(click,cmd_txteditgrade_click)
+gui.SS_Form2.cmd_txtEditGrade.defaultvalue("")
+gui.SS_Form2.cmd_txtEditGrade.controlgroup(0)
+gui.SS_Form2.lbl_txtEditSize.create(label,"Size",True,1800,200,1,100,750,True,0,Arial,8,-2147483633,0)
+gui.SS_Form2.lbl_txtEditSize.defaultvalue("")
+gui.SS_Form2.lbl_txtEditSize.controlgroup(0)
+gui.SS_Form2.txtEditSize.create(textbox,"",True,1800,330,1,100,950,True,0,Arial,8,16777215,1)
+gui.SS_Form2.txtEditSize.defaultvalue("")
+gui.SS_Form2.txtEditSize.controlgroup(0)
+gui.SS_Form2.cmd_txtEditSize.create(button)
+gui.SS_Form2.cmd_txtEditSize.caption("^")
+gui.SS_Form2.cmd_txtEditSize.visible(True)
+gui.SS_Form2.cmd_txtEditSize.size(330,330)
+gui.SS_Form2.cmd_txtEditSize.zorder(0)
+gui.SS_Form2.cmd_txtEditSize.position(1985,950)
+gui.SS_Form2.cmd_txtEditSize.enabled(True)
+gui.SS_Form2.cmd_txtEditSize.fontname("Arial")
+gui.SS_Form2.cmd_txtEditSize.fontsize(8)
+gui.SS_Form2.cmd_txtEditSize.event(click,cmd_txteditsize_click)
+gui.SS_Form2.cmd_txtEditSize.defaultvalue("")
+gui.SS_Form2.cmd_txtEditSize.controlgroup(0)
+gui.SS_Form2.cmdGo.create(button)
+gui.SS_Form2.cmdGo.caption("Go")
+gui.SS_Form2.cmdGo.visible(True)
+gui.SS_Form2.cmdGo.size(1000,360)
+gui.SS_Form2.cmdGo.zorder(0)
+gui.SS_Form2.cmdGo.position(100,1365)
+gui.SS_Form2.cmdGo.enabled(True)
+gui.SS_Form2.cmdGo.fontname("Arial")
+gui.SS_Form2.cmdGo.fontsize(8)
+gui.SS_Form2.cmdGo.event(click,cmdgo_click)
+gui.SS_Form2.cmdGo.defaultvalue("")
+gui.SS_Form2.cmdGo.controlgroup(0)
+gui.SS_Form2.txtEditGrade.tabstop(true)
+gui.SS_Form2.txtEditGrade.tabindex(1)
+gui.SS_Form2.cmd_txtEditGrade.tabstop(true)
+gui.SS_Form2.cmd_txtEditGrade.tabindex(2)
+gui.SS_Form2.txtEditSize.tabstop(true)
+gui.SS_Form2.txtEditSize.tabindex(3)
+gui.SS_Form2.cmd_txtEditSize.tabstop(true)
+gui.SS_Form2.cmd_txtEditSize.tabindex(4)
+gui.SS_Form2.cmdGo.tabstop(true)
+gui.SS_Form2.cmdGo.tabindex(5)
+
+
+gui.F_ViewEdit..create
+gui.F_ViewEdit..caption("Edit by Grade")
+gui.F_ViewEdit..size(6100,4000)
+gui.F_ViewEdit..minx(0)
+gui.F_ViewEdit..miny(0)
+gui.F_ViewEdit..position(0,0)
+gui.F_ViewEdit..event(unload,F_ViewEdit_Unload)
+gui.F_ViewEdit..alwaysontop(False)
+gui.F_ViewEdit..fontname("Arial")
+gui.F_ViewEdit..fontsize(7)
+gui.F_ViewEdit..forecolor(0)
+gui.F_ViewEdit..fontstyle(,,,,)
+gui.F_ViewEdit..BackColor(-2147483633)
+gui.F_ViewEdit..controlbox(True)
+gui.F_ViewEdit..maxbutton(False)
+gui.F_ViewEdit..minbutton(True)
+gui.F_ViewEdit..mousepointer(1)
+gui.F_ViewEdit..moveable(True)
+gui.F_ViewEdit..sizeable(False)
+gui.F_ViewEdit..ShowInTaskBar(True)
+gui.F_ViewEdit..titlebar(True)
+gui.F_ViewEdit.gsfgEditView.create(gsflexgrid)
+gui.F_ViewEdit.gsfgEditView.FixedRows(0)
+gui.F_ViewEdit.gsfgEditView.FixedCols(0)
+gui.F_ViewEdit.gsfgEditView.visible(True)
+gui.F_ViewEdit.gsfgEditView.size(5800,2665)
+gui.F_ViewEdit.gsfgEditView.zorder(0)
+gui.F_ViewEdit.gsfgEditView.position(100,100)
+gui.F_ViewEdit.gsfgEditView.enabled(True)
+gui.F_ViewEdit.gsfgEditView.event(commandclick,gsfgEditView_CommandClick)
+gui.F_ViewEdit.cmdEditSave.create(button)
+gui.F_ViewEdit.cmdEditSave.caption("Save")
+gui.F_ViewEdit.cmdEditSave.visible(True)
+gui.F_ViewEdit.cmdEditSave.size(1120,340)
+gui.F_ViewEdit.cmdEditSave.zorder(0)
+gui.F_ViewEdit.cmdEditSave.position(100,3145)
+gui.F_ViewEdit.cmdEditSave.enabled(True)
+gui.F_ViewEdit.cmdEditSave.fontname("Arial")
+gui.F_ViewEdit.cmdEditSave.fontsize(7)
+gui.F_ViewEdit.cmdEditSave.event(click,cmdEditSave_Click)
+gui.F_ViewEdit.cmdEditSave.defaultvalue("")
+gui.F_ViewEdit.cmdEditSave.controlgroup(0)
+gui.F_ViewEdit.cmdEditSave.tabstop(True)
+gui.F_ViewEdit.cmdEditSave.tabindex(1)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+'SAS
+V.Local.sError.Declare(String)
+
+
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+Gui.SS_Form1..Show
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.SS_Form1_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("SS_Form1_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("SS_Form1_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.SS_Form1_Unload.End
+
+Program.Sub.cmd_txtPart_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtPart_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.String.Split("Part*!*Description*!*Grade*!*Size","*!*",V.Local.sTitle)
+Function.Intrinsic.String.Split("800*!*3000*!*600*!*600","*!*",V.Local.iWidth)
+V.Local.sSQL.Set("SELECT INV.PART, INV.DESCRIPTION, INV2.TEXT_INFO1 AS GRADE, INV2.TEXT_INFO2 AS SIZE FROM V_INVENTORY_MSTR AS INV JOIN V_INVENTORY_MST2 AS INV2 ON INV.PART = INV2.PART WHERE GRADE <> '' AND SIZE <> ''ORDER BY GRADE ASC")
+'browser that you can pick part from and it also sets grade and lead time
+Function.Intrinsic.UI.Browser("Part Selector","Con",V.Local.sSQL,V.Local.sTitle,V.Local.iWidth,V.Local.sRet)
+Function.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	Function.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	'sets part, lead time and grade based off of the selection of the part
+	Gui.SS_Form1.txtPart.Text(V.Local.sRet(0).Trim)
+	Gui.SS_Form1.txtGrade.Text(V.Local.sRet(2).Trim)
+	Gui.SS_Form1.txtSize.Text(V.Local.sRet(3).Trim)
+F.Intrinsic.Control.EndIf
+Gui.SS_Form1.txtProcess.SetFocus
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtPart_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmd_txtPart_Click.End
+
+Program.Sub.cmdSave_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdSave_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.bNum.Declare(Boolean)
+
+'MULTIPLE AND'S ARE NOW WORKING RIGHT NOW
+'if no text field is blank save
+Function.Intrinsic.Control.If(V.Screen.SS_Form1!txtPart.Text,!=,"","AND",V.Screen.SS_Form1!txtProcess.Text,!=,"")
+F.Intrinsic.Control.AndIf(V.Screen.SS_Form1!txtGrade.Text,!=,"","AND",V.Screen.SS_Form1!txtLT.Text,!=,"")
+F.Intrinsic.Control.AndIf(V.Screen.SS_Form1!txtScrap.Text,!=,"","AND",V.Screen.SS_Form1!txtSize.Text,!=,"")
+	'makes sure that scrap and lt are numeric
+	F.Intrinsic.Math.IsNumeric(V.Screen.SS_Form1!txtLT.Text,V.Local.bNum)
+	F.Intrinsic.Control.If(V.Local.bNum,=,True)
+		F.Intrinsic.Math.IsNumeric(V.Screen.SS_Form1!txtScrap.Text,V.Local.bNum)
+		F.Intrinsic.Control.If(V.Local.bNum,=,False)
+			F.Intrinsic.UI.Msgbox("Scrap has to be numeric","Invalid Scrap")
+			F.Intrinsic.Control.ExitSub
+		F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.Else
+		F.Intrinsic.UI.Msgbox("Lead Time has to be numeric","Invalid LT")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Connection!Con.OpenLocalRecordsetRW("Rst","SELECT * FROM GCG_3051_MULT_MRP")
+	'counts how many are in the grade and assign a lvl starting from 0
+	Function.Intrinsic.String.Build("SELECT COUNT(GRADE) AS LVLNUM FROM GCG_3051_MULT_MRP WHERE GRADE = '{0}' AND MSIZE = '{1}' ",v.Screen.SS_Form1!txtGrade.Text.Trim,V.Screen.SS_Form1!txtSize.Text.Trim,V.Local.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRO("Rst1",V.Local.sSQL)
+	'adding new values to the table
+	F.ODBC.Con!Rst.AddNew
+	F.ODBC.Con!Rst.Set!PART(V.Screen.SS_Form1!txtPart.Text.Trim)
+	F.ODBC.Con!Rst.Set!PROCESS(V.Screen.SS_Form1!txtProcess.Text.Trim)
+	F.ODBC.Con!Rst.Set!GRADE(V.Screen.SS_Form1!txtGrade.Text.Trim)
+	F.ODBC.Con!Rst.Set!LEAD_TIME(V.Screen.SS_Form1!txtLT.Text.Trim)
+	F.ODBC.Con!Rst.Set!SCRAP(V.Screen.SS_Form1!txtScrap.Text.Trim)
+	F.ODBC.Con!Rst.Set!LVL(V.ODBC.Con!Rst1.FieldValTrim!LVLNUM)
+	F.ODBC.Con!Rst.Set!MSIZE(V.Screen.SS_Form1!txtSize.Text.Trim)
+	F.ODBC.Con!Rst.Update
+	F.ODBC.Con!Rst1.Close
+	F.ODBC.Con!Rst.Close
+
+	Gui.SS_Form1.txtPart.Text("")
+	Gui.SS_Form1.txtSize.Text("")
+	Gui.SS_Form1.txtProcess.Text("")
+	Gui.SS_Form1.txtGrade.Text("")
+	Gui.SS_Form1.txtLT.Text("")
+	Gui.SS_Form1.txtScrap.Text("")
+F.Intrinsic.Control.EndIf
+Gui.SS_Form1.txtPart.SetFocus
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdSave_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdSave_Click.End
+
+Program.Sub.cmdEdit_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdEdit_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.SS_Form2.txtEditGrade.Text("")
+Gui.SS_Form2.txtEditSize.Text("")
+Gui.SS_Form2..Visible(True)
+Gui.SS_Form2.txtEditGrade.SetFocus
+Gui.SS_Form1..Visible(False)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdEdit_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdEdit_Click.End
+
+Program.Sub.SS_Form2_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("SS_Form2_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+GUI.SS_Form2.txtEditGrade.Text("")
+Gui.SS_Form2..Visible(False)
+Gui.SS_Form1..Visible(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("SS_Form2_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	GUI.SS_Form2.txtEditGrade.Text("")
+	Gui.SS_Form2..Visible(false)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.SS_Form2_Unload.End
+
+Program.Sub.cmd_txtEditGrade_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtEditGrade_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+
+Function.Intrinsic.String.Split("Grade*!*Size","*!*",V.Local.sTitle)
+Function.Intrinsic.String.Split("800*!*800","*!*",V.Local.iWidth)
+Function.Intrinsic.UI.Browser("Select Grade","Con","SELECT DISTINCT GRADE, MSIZE FROM GCG_3051_MULT_MRP",V.Local.sTitle,V.Local.iWidth,V.Local.sRet)
+Function.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	'IF NOT CANCELED THEN PUT GRADE INTO TXT FIELD
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form2.txtEditGrade.Text(V.Local.sRet(0))
+	Gui.SS_Form2.txtEditSize.Text(V.Local.sRet(1))
+F.Intrinsic.Control.EndIf
+Gui.SS_Form2.cmdGo.SetFocus
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtEditGrade_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form2_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmd_txtEditGrade_Click.End
+
+Program.Sub.cmdGo_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdGo_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+'populate ss_form3 and show it, then unload form2
+Function.Intrinsic.Control.CallSub(Buildstyle)
+Function.Intrinsic.Control.CallSub(Loadeditview)
+
+Gui.SS_Form2..Visible(false)
+Gui.F_ViewEdit..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdGo_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form2_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdGo_Click.End
+
+Program.Sub.F_ViewEdit_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("F_ViewEdit_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.F_ViewEdit..Visible(False)
+Gui.SS_Form1..Visible(True)
+Gui.SS_Form1.txtPart.SetFocus
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("F_ViewEdit_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Gui.F_ViewEdit..Visible(false)
+	Gui.SS_Form2..Visible(true)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.F_ViewEdit_Unload.End
+
+Program.Sub.BuildStyle.Start
+F.Intrinsic.Control.SetErrorHandler("BuildStyle_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sHeader.Declare(String)
+V.Local.iCount.Declare(Long)
+V.Local.iWidth.Declare(Long)
+
+Gui.F_ViewEdit.gsfgEditView.Visible(False)
+
+F.Intrinsic.String.Split("Part*!*Process*!*Lead Time*!*Scrap*!**!**!*","*!*",v.Local.sHeader)
+F.Intrinsic.String.Split("900*!*1800*!*500*!*500*!*600*!*600*!*600","*!*",V.Local.iWidth)
+
+Gui.F_ViewEdit.gsfgEditView.Rows(1)
+'Gui.F_ViewEdit.gsfgEditView.Rows(2)
+Gui.F_ViewEdit.gsfgEditView.FixedRows(1)
+Gui.F_ViewEdit.gsfgEditView.Cols(7)
+
+'cycles through and sets the header and buildstyles
+F.Intrinsic.Control.For(v.Local.iCount,0,v.Local.sHeader.UBound,1)
+	Gui.F_ViewEdit.gsfgEditView.TextMatrix(v.Local.iCount,0,v.Local.sHeader(v.Local.iCount))
+	Gui.F_ViewEdit.gsfgEditView.BuildStyle(1,V.Local.iCount,"Type","Locked",True)
+	Gui.F_ViewEdit.gsfgEditView.BuildStyle(1,V.Local.iCount,"Format","Alignment",4)
+	Gui.F_ViewEdit.gsfgEditView.ColWidth(v.Local.iCount,v.Local.iWidth(v.Local.iCount))
+F.Intrinsic.Control.Next(V.Local.iCount)
+'Gui.F_ViewEdit.gsfgEditView.BuildStyle(2,0,"Type","Locked",True)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(3,4,"Type","Command","Up")
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(3,4,"Color","Fore",V.Color.Green)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(3,4,"Format","Alignment",4)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(4,5,"Type","Command","Down")
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(4,5,"Color","Fore",V.Color.Blue)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(4,5,"Format","Alignment",4)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(2,6,"Type","Command","Delete")
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(2,6,"Color","Fore",V.Color.Red)
+Gui.F_ViewEdit.gsfgEditView.BuildStyle(2,6,"Format","Alignment",4)
+Gui.F_ViewEdit.gsfgEditView.ApplyStyle(0,1)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("BuildStyle_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.BuildStyle.End
+
+Program.Sub.LoadEditView.Start
+F.Intrinsic.Control.SetErrorHandler("LoadEditView_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iRows.Declare(Long)
+
+f.Intrinsic.String.Build("SELECT PART, PROCESS, LEAD_TIME, SCRAP FROM GCG_3051_MULT_MRP WHERE GRADE = '{0}' AND MSIZE = '{1}' ORDER BY LVL ASC",V.Screen.SS_Form2!txtEditGrade.Text.Trim,V.Screen.SS_Form2!txtEditSize.Text.Trim,V.Local.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("Rst",V.Local.sSQL)
+Gui.F_ViewEdit.gsfgEditView.LoadRecordset("Con!Rst",2)
+F.ODBC.Con!Rst.Close
+'BECAUSE OF HOW OCTSRS IS WORKING RIGHT NOW I HAVE AN EXTRA ROW AT THE END OF THE GRID
+F.Intrinsic.Math.Sub(V.Screen.F_ViewEdit!gsfgEditView.Rows,1,V.Local.iRows)
+Gui.F_ViewEdit.gsfgEditView.Rows(V.Local.iRows)
+Function.Intrinsic.Control.CallSub(Gridreload)
+
+Gui.F_ViewEdit.gsfgEditView.Visible(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadEditView_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadEditView.End
+
+Program.Sub.gsfgEditView_CommandClick.Start
+F.Intrinsic.Control.SetErrorHandler("gsfgEditView_CommandClick_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRow.Declare(Long)
+V.Local.iCount.Declare(Long,1)
+V.Local.sReadRow.Declare(String)
+V.Local.iRows.Declare(Long)
+V.Local.iCol.Declare(Long,0)
+V.Local.sTempRead.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.iAnswer.Declare(Long)
+V.Local.iKey.Declare(Long)
+
+V.Local.iKey.Set(V.Args.Key)
+F.Intrinsic.Math.Sub(V.Screen.F_ViewEdit!gsfgEditView.Rows,1,V.Local.iRows)
+'v.Local.iRows.Set(v.Screen.F_ViewEdit!gsfgEditView.Rows)
+'they clicked 4 UP column, move up 1
+Function.Intrinsic.Control.If(V.Args.Column,=,4)
+	'get where it is going to go
+	F.Intrinsic.Math.Sub(V.Local.iKey,1,V.Local.iRow)
+	'cycle through reading rows and placing them where they belong
+	F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iRows)
+		'Leave everthing as is if before the row move
+		F.Intrinsic.Control.If(V.Local.iCount,<,V.Local.iRow)
+			'do the nothing
+		'if in the new location
+		F.Intrinsic.Control.ElseIf(V.Local.iCount,=,V.Local.iRow)
+			Gui.F_ViewEdit.gsfgEditView.ReadRow(V.Local.iCount,V.Local.sTempRead)
+			V.Local.sReadRow.Redim(0,0)
+			Gui.F_ViewEdit.gsfgEditView.ReadRow(V.Local.iKey,V.Local.sReadRow)
+			F.Intrinsic.String.Split(V.Local.sReadRow,"*!*",V.Local.sReadRow)
+			F.Intrinsic.Control.DoUntil(V.Local.iCol,>,3)
+				Gui.F_ViewEdit.gsfgEditView.TextMatrix(V.Local.iCol,V.Local.iCount,V.Local.sReadRow(v.Local.iCol))
+				F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+			F.Intrinsic.Control.Loop
+			V.Local.iCol.Set(0)
+		'if at the old location
+		F.Intrinsic.Control.ElseIf(V.Local.iCount,=,V.Local.iKey)
+			F.Intrinsic.String.Split(V.Local.sTempRead,"*!*",V.Local.sTempRead)
+			F.Intrinsic.Control.DoUntil(V.Local.iCol,>,3)
+				Gui.F_ViewEdit.gsfgEditView.TextMatrix(V.Local.iCol,V.Local.iCount,V.Local.sTempRead(v.Local.iCol))
+				F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+			F.Intrinsic.Control.Loop
+			V.Local.iCol.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Control.Loop
+
+'they clicked 5 Down column, move Down 1
+Function.Intrinsic.Control.ElseIf(V.Args.Column,=,5)
+	'get where it is going to go
+	F.Intrinsic.Math.Add(V.Local.iKey,1,V.Local.iRow)
+	'cycle through reading rows and placing them where they belong
+	F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iRows)
+		F.Intrinsic.Control.If(V.Local.iCount,=,V.Local.iKey)
+			Gui.F_ViewEdit.gsfgEditView.ReadRow(V.Local.iCount,V.Local.sTempRead)
+			V.Local.sReadRow.Redim(0,0)
+			Gui.F_ViewEdit.gsfgEditView.ReadRow(V.Local.iRow,V.Local.sReadRow)
+			F.Intrinsic.String.Split(V.Local.sReadRow,"*!*",V.Local.sReadRow)
+			F.Intrinsic.Control.DoUntil(V.Local.iCol,>,3)
+				Gui.F_ViewEdit.gsfgEditView.TextMatrix(V.Local.iCol,V.Local.iCount,V.Local.sReadRow(v.Local.iCol))
+				F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+			F.Intrinsic.Control.Loop
+			V.Local.iCol.Set(0)
+		F.Intrinsic.Control.ElseIf(V.Local.iCount,=,V.Local.iRow)
+			F.Intrinsic.String.Split(V.Local.sTempRead,"*!*",V.Local.sTempRead)
+			F.Intrinsic.Control.DoUntil(V.Local.iCol,>,3)
+				Gui.F_ViewEdit.gsfgEditView.TextMatrix(V.Local.iCol,V.Local.iCount,V.Local.sTempRead(v.Local.iCol))
+				F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+			F.Intrinsic.Control.Loop
+			V.Local.iCol.Set(0)
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Control.Loop
+'they clicked 6 delete column, delete the row
+Function.Intrinsic.Control.ElseIf(V.Args.Column,=,6)
+	Function.Intrinsic.UI.Msgbox("Are you sure you want to Delete this row?","Warning!",4,V.Local.iAnswer)
+	Function.Intrinsic.Control.If(V.Local.iAnswer,=,6)
+		Gui.F_ViewEdit.gsfgEditView.Rows(V.Local.iRows)
+		Function.Intrinsic.Control.CallSub(Gridreload)
+	Function.Intrinsic.Control.EndIf
+Function.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgEditView_CommandClick_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_viewedit_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.gsfgEditView_CommandClick.End
+
+Program.Sub.cmdEditSave_Click.Start
+F.Intrinsic.Control.SetErrorHandler("cmdEditSave_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sSQL.Declare(String)
+V.Local.sReadRow.Declare(String)
+V.Local.iRowCount.Declare(Long)
+V.Local.iCount.Declare(Long,1)
+
+Gui.F_ViewEdit.gsfgEditView.Commit
+'select all from the grade and delete it from the table
+Function.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULT_MRP WHERE GRADE = '{0}' AND MSIZE = '{1}' ",V.Screen.SS_Form2!txtEditGrade.Text,V.Screen.SS_Form2!txtEditSize.Text,V.Local.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("Rst",V.Local.sSQL)
+Function.Intrinsic.Control.DoUntil(V.ODBC.Con!Rst.EOF,=,True)
+	F.ODBC.Con!Rst.Delete
+	F.ODBC.Con!Rst.MoveNext
+Function.Intrinsic.Control.Loop
+F.ODBC.Con!Rst.Requery
+F.Intrinsic.Math.Sub(V.Screen.F_ViewEdit!gsfgEditView.Rows,1,V.Local.iRowCount)
+'Readd everything from the flexgrid in the order that it is in the flexgrid into the table
+Function.Intrinsic.Control.If(V.ODBC.Con!Rst.EOF,=,True)
+	Function.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iRowCount)
+		Gui.F_ViewEdit.gsfgEditView.ReadRow(V.Local.iCount,V.Local.sReadRow)
+		Function.Intrinsic.String.Split(V.Local.sReadRow,"*!*",V.Local.sReadRow)
+		'Numbers them as they are in the flexgrid
+		Function.Intrinsic.String.Build("SELECT COUNT(GRADE) AS LVL FROM GCG_3051_MULT_MRP WHERE GRADE = '{0}' AND MSIZE = '{1}' ",V.Screen.SS_Form2!txtEditGrade.Text,V.Screen.SS_Form2!txtEditSize.Text,V.Local.sSQL)
+		F.ODBC.Connection!Con.OpenLocalRecordsetRO("Rst2",V.Local.sSQL)
+		F.ODBC.Con!Rst.AddNew
+		F.ODBC.Con!Rst.Set!PART(V.Local.sReadRow(0))
+		F.ODBC.Con!Rst.Set!PROCESS(V.Local.sReadRow(1))
+		F.ODBC.Con!Rst.Set!LEAD_TIME(V.Local.sReadRow(2))
+		F.ODBC.Con!Rst.Set!SCRAP(V.Local.sReadRow(3))
+		F.ODBC.Con!Rst.Set!LVL(V.ODBC.Con!Rst2.FieldValLong!LVL)
+		F.ODBC.Con!Rst.Set!GRADE(v.Screen.SS_Form2!txtEditGrade.Text.Trim)
+		F.ODBC.Con!Rst.Set!MSIZE(V.Screen.SS_Form2!txtEditSize.Text.Trim)
+		F.ODBC.Con!Rst.Update
+		F.ODBC.Con!Rst2.Close
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	Function.Intrinsic.Control.Loop
+Function.Intrinsic.Control.EndIf
+
+Function.Intrinsic.Control.CallSub(F_viewedit_unload)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdEditSave_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(F_viewedit_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.cmdEditSave_Click.End
+
+Program.Sub.GridReload.Start
+F.Intrinsic.Control.SetErrorHandler("GridReload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRowCount.Declare(Long)
+V.Local.iCount.Declare(Long,1)
+
+'loops though the rows and adds the up and down command buttons to all but the first and last row. first row doesn't get up, last doesn't get down.
+F.Intrinsic.Math.Sub(V.Screen.F_ViewEdit!gsfgEditView.Rows,1,V.Local.iRowCount)
+Function.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iRowCount)
+	'no up button will be displayed on the first row
+	Function.Intrinsic.Control.If(V.Local.iCount,=,1)
+		Gui.F_ViewEdit.gsfgEditView.removeStyle(v.Local.iCount)
+		Gui.F_ViewEdit.gsfgEditView.TextMatrix(4,V.Local.iCount," ")
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,4)
+					'Backcolor is giving errors in .NET
+		Gui.F_ViewEdit.gsfgEditView.GSGOverrideProperty(4,V.Local.iCount,"Backcolor",V.Color.LtGray)
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,2)
+	'no down button on last row
+	Function.Intrinsic.Control.ElseIf(V.Local.iCount,=,V.Local.iRowCount)
+		Gui.F_ViewEdit.gsfgEditView.RemoveStyle(v.Local.iCount)
+		Gui.F_ViewEdit.gsfgEditView.TextMatrix(5,V.Local.iCount," ")
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,3)
+					'Backcolor is giving errors in .NET
+		Gui.F_ViewEdit.gsfgEditView.GSGOverrideProperty(5,V.Local.iCount,"Backcolor",V.Color.LtGray)
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,2)
+	'display up and down because not first or last
+	Function.Intrinsic.Control.Else
+		Gui.F_ViewEdit.gsfgEditView.RemoveStyle(v.Local.iCount)
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,3)
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,4)
+		Gui.F_ViewEdit.gsfgEditView.ApplyStyle(V.Local.iCount,2)
+	Function.Intrinsic.Control.EndIf
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+Function.Intrinsic.Control.Loop
+F.Intrinsic.Math.Add(V.Local.iRowCount,1,V.Local.iRowCount)
+Gui.F_ViewEdit.gsfgEditView.Rows(V.Local.iRowCount)
+Gui.F_ViewEdit.gsfgEditView.Visible(True)
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("GridReload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(F_viewedit_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.GridReload.End
+
+program.sub.cmd_txteditsize_click.start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtEditSize_Click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+
+Function.Intrinsic.String.Split("Size*!*Grade","*!*",V.Local.sTitle)
+Function.Intrinsic.String.Split("800*!*800","*!*",V.Local.iWidth)
+Function.Intrinsic.UI.Browser("Select Size","Con","SELECT DISTINCT MSIZE, GRADE FROM GCG_3051_MULT_MRP",V.Local.sTitle,V.Local.iWidth,V.Local.sRet)
+Function.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	'IF NOT CANCELED THEN PUT GRADE INTO TXT FIELD
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form2.txtEditGrade.Text(V.Local.sRet(1))
+	Gui.SS_Form2.txtEditSize.Text(V.Local.sRet(0))
+F.Intrinsic.Control.EndIf
+Gui.SS_Form2.cmdGo.SetFocus
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtEditSize_Click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP_Maint.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form2_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmd_txteditsize_click.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_7261_Multi_MRP_Maint$}$Strider$}$9/18/2015
+${$2$}$$}$$}$1$}$4$}$SQL$}$10/21/2015 4:10:32 PM$}$GCG_7261_MULT_MRP
+GCG_7261_MULTMRP_RPT
+GCG_7261_MULTMRP_SUM
+${$2$}$$}$$}$0$}$2$}$GAB$}$10/21/2015 4:08:50 PM$}$GCG_7261_MULTI_MRP.GAS
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Maintenance program for GCG_7261_MULT_MRP.gas
+This is a modification to the above project that will allow the user to save the summary flexgrid so it can be used the next time they open the grade and size.
+${$4$}$0$}$$}$0$}$-1$}$Strider$}$10/21/2015 4:11:58 PM$}$Modificaiton of ARC Project 1507
+This adds in the ability to save Summary for later use.
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::Multi_MRP_Maint
+SS_Form1.CTRL{{NAME::lbl1\\TYPE::1\\CAPTION::Please add Processes by highest level of BOM to lowest.\\TABSTOP::0\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::txtPart\\TYPE::2\\CAPTION::Part\\TABSTOP::1\\GROUP::-1\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::txtSize\\TYPE::2\\CAPTION::Size\\TABSTOP::2\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::txtProcess\\TYPE::2\\CAPTION::Process Name\\TABSTOP::3\\GROUP::-1\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::txtGrade\\TYPE::2\\CAPTION::Grade\\TABSTOP::4\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::txtLT\\TYPE::2\\CAPTION::Lead Time\\TABSTOP::5\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::txtScrap\\TYPE::2\\CAPTION::Scrap\\TABSTOP::6\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdSave\\TYPE::5\\CAPTION::Save\\TABSTOP::7\\GROUP::-1\\BROWSER::0\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdEdit\\TYPE::5\\CAPTION::Edit\\TABSTOP::8\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+SS_Form2{{CAPTION::Edit
+SS_Form2.CTRL{{NAME::txtEditGrade\\TYPE::2\\CAPTION::Grade\\TABSTOP::1\\GROUP::-1\\BROWSER::1\\SIZE::1
+SS_Form2.CTRL{{NAME::txtEditSize\\TYPE::2\\CAPTION::Size\\TABSTOP::2\\GROUP::-1\\BROWSER::1\\SIZE::1
+SS_Form2.CTRL{{NAME::cmdGo\\TYPE::5\\CAPTION::Go\\TABSTOP::3\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
