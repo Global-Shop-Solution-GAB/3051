@@ -1,0 +1,2041 @@
+Program.Sub.ScreenSU.Start
+gui.SS_Form1..create
+gui.SS_Form1..caption("Select Grade")
+gui.SS_Form1..size(2700,2820)
+gui.SS_Form1..minx(0)
+gui.SS_Form1..miny(0)
+gui.SS_Form1..position(0,0)
+gui.SS_Form1..event(unload,ss_form1_unload)
+gui.SS_Form1..alwaysontop(False)
+gui.SS_Form1..fontname("Arial")
+gui.SS_Form1..fontsize(8)
+gui.SS_Form1..forecolor(0)
+gui.SS_Form1..fontstyle(,,,,)
+gui.SS_Form1..BackColor(-2147483633)
+gui.SS_Form1..controlbox(True)
+gui.SS_Form1..maxbutton(False)
+gui.SS_Form1..minbutton(False)
+gui.SS_Form1..mousepointer(0)
+gui.SS_Form1..moveable(True)
+gui.SS_Form1..sizeable(False)
+gui.SS_Form1..ShowInTaskBar(True)
+gui.SS_Form1..titlebar(True)
+gui.SS_Form1.lbl_txtGrade.create(label,"Select Grade",True,1800,200,1,100,135,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl_txtGrade.defaultvalue("")
+gui.SS_Form1.lbl_txtGrade.controlgroup(0)
+gui.SS_Form1.txtGrade.create(textbox,"",True,1800,330,0,100,335,True,0,Arial,8,16777215,1)
+gui.SS_Form1.txtGrade.defaultvalue("")
+gui.SS_Form1.txtGrade.controlgroup(0)
+gui.SS_Form1.cmd_txtGrade.create(button)
+gui.SS_Form1.cmd_txtGrade.caption("^")
+gui.SS_Form1.cmd_txtGrade.visible(True)
+gui.SS_Form1.cmd_txtGrade.size(330,330)
+gui.SS_Form1.cmd_txtGrade.zorder(0)
+gui.SS_Form1.cmd_txtGrade.position(1985,335)
+gui.SS_Form1.cmd_txtGrade.enabled(True)
+gui.SS_Form1.cmd_txtGrade.fontname("Arial")
+gui.SS_Form1.cmd_txtGrade.fontsize(8)
+gui.SS_Form1.cmd_txtGrade.event(click,cmd_txtgrade_click)
+gui.SS_Form1.cmd_txtGrade.defaultvalue("")
+gui.SS_Form1.cmd_txtGrade.controlgroup(0)
+gui.SS_Form1.cmdGo.create(button)
+gui.SS_Form1.cmdGo.caption("Go")
+gui.SS_Form1.cmdGo.visible(True)
+gui.SS_Form1.cmdGo.size(1000,360)
+gui.SS_Form1.cmdGo.zorder(0)
+gui.SS_Form1.cmdGo.position(100,1380)
+gui.SS_Form1.cmdGo.enabled(True)
+gui.SS_Form1.cmdGo.fontname("Arial")
+gui.SS_Form1.cmdGo.fontsize(8)
+gui.SS_Form1.cmdGo.event(click,cmdgo_click)
+gui.SS_Form1.cmdGo.defaultvalue("")
+gui.SS_Form1.cmdGo.controlgroup(0)
+gui.SS_Form1.lbl2.create(label,"Size",True,1935,255,1,100,700,True,0,Arial,8,-2147483633,0)
+gui.SS_Form1.lbl2.defaultvalue("")
+gui.SS_Form1.lbl2.controlgroup(0)
+gui.SS_Form1.txtSize.create(textbox,"",True,1800,300,0,100,900,True,0,Arial,8,-2147483643,1)
+gui.SS_Form1.txtSize.defaultvalue("")
+gui.SS_Form1.txtSize.controlgroup(0)
+gui.SS_Form1.cmdSize.create(button)
+gui.SS_Form1.cmdSize.caption("^")
+gui.SS_Form1.cmdSize.visible(True)
+gui.SS_Form1.cmdSize.size(330,330)
+gui.SS_Form1.cmdSize.zorder(0)
+gui.SS_Form1.cmdSize.position(1985,900)
+gui.SS_Form1.cmdSize.enabled(True)
+gui.SS_Form1.cmdSize.fontname("Arial")
+gui.SS_Form1.cmdSize.fontsize(8)
+gui.SS_Form1.cmdSize.event(click,cmdsize_click)
+gui.SS_Form1.cmdSize.defaultvalue("")
+gui.SS_Form1.cmdSize.controlgroup(0)
+gui.SS_Form1.cmdMultRPT.create(button)
+gui.SS_Form1.cmdMultRPT.caption("Multi RPT")
+gui.SS_Form1.cmdMultRPT.visible(True)
+gui.SS_Form1.cmdMultRPT.size(1000,360)
+gui.SS_Form1.cmdMultRPT.zorder(0)
+gui.SS_Form1.cmdMultRPT.position(100,1900)
+gui.SS_Form1.cmdMultRPT.enabled(True)
+gui.SS_Form1.cmdMultRPT.fontname("Arial")
+gui.SS_Form1.cmdMultRPT.fontsize(8)
+gui.SS_Form1.cmdMultRPT.event(click,cmdmultrpt_click)
+gui.SS_Form1.cmdMultRPT.defaultvalue("")
+gui.SS_Form1.cmdMultRPT.controlgroup(0)
+gui.SS_Form1.txtGrade.tabstop(true)
+gui.SS_Form1.txtGrade.tabindex(1)
+gui.SS_Form1.cmd_txtGrade.tabstop(true)
+gui.SS_Form1.cmd_txtGrade.tabindex(2)
+gui.SS_Form1.cmdGo.tabstop(true)
+gui.SS_Form1.cmdGo.tabindex(3)
+
+
+gui.F_Mult_MRP..create
+gui.F_Mult_MRP..caption("MRP for Multiple BOM's")
+gui.F_Mult_MRP..size(24285,9420)
+gui.F_Mult_MRP..minx(0)
+gui.F_Mult_MRP..miny(0)
+gui.F_Mult_MRP..position(0,0)
+gui.F_Mult_MRP..event(unload,F_Mult_MRP_Unload)
+gui.F_Mult_MRP..alwaysontop(False)
+gui.F_Mult_MRP..fontname("Arial")
+gui.F_Mult_MRP..fontsize(7)
+gui.F_Mult_MRP..forecolor(0)
+gui.F_Mult_MRP..fontstyle(,,,,)
+gui.F_Mult_MRP..BackColor(-2147483633)
+gui.F_Mult_MRP..controlbox(True)
+gui.F_Mult_MRP..maxbutton(False)
+gui.F_Mult_MRP..minbutton(True)
+gui.F_Mult_MRP..mousepointer(1)
+gui.F_Mult_MRP..moveable(True)
+gui.F_Mult_MRP..sizeable(False)
+gui.F_Mult_MRP..ShowInTaskBar(True)
+gui.F_Mult_MRP..titlebar(True)
+gui.F_Mult_MRP.gsfgPreview.create(gsflexgrid)
+gui.F_Mult_MRP.gsfgPreview.FixedRows(0)
+gui.F_Mult_MRP.gsfgPreview.FixedCols(0)
+gui.F_Mult_MRP.gsfgPreview.visible(True)
+gui.F_Mult_MRP.gsfgPreview.size(23820,4365)
+gui.F_Mult_MRP.gsfgPreview.zorder(0)
+gui.F_Mult_MRP.gsfgPreview.position(100,200)
+gui.F_Mult_MRP.gsfgPreview.enabled(True)
+gui.F_Mult_MRP.gsfgPreview.event(mouseup,gsfgpreview_mouseup)
+gui.F_Mult_MRP.gsfgSummary.create(gsflexgrid)
+gui.F_Mult_MRP.gsfgSummary.FixedRows(0)
+gui.F_Mult_MRP.gsfgSummary.FixedCols(0)
+gui.F_Mult_MRP.gsfgSummary.visible(True)
+gui.F_Mult_MRP.gsfgSummary.size(5105,3780)
+gui.F_Mult_MRP.gsfgSummary.zorder(0)
+gui.F_Mult_MRP.gsfgSummary.position(100,4900)
+gui.F_Mult_MRP.gsfgSummary.enabled(True)
+gui.F_Mult_MRP.gsfgSummary.event(mouseup,gsfgsummary_mouseup)
+gui.F_Mult_MRP.gsfgActivity.create(gsflexgrid)
+gui.F_Mult_MRP.gsfgActivity.FixedRows(0)
+gui.F_Mult_MRP.gsfgActivity.FixedCols(0)
+gui.F_Mult_MRP.gsfgActivity.visible(True)
+gui.F_Mult_MRP.gsfgActivity.size(16425,3780)
+gui.F_Mult_MRP.gsfgActivity.zorder(0)
+gui.F_Mult_MRP.gsfgActivity.position(7500,4900)
+gui.F_Mult_MRP.gsfgActivity.enabled(True)
+gui.F_Mult_MRP.gsfgActivity.event(mouseup,gsfgactivity_mouseup)
+gui.F_Mult_MRP.lbl1.create(label,"Summary by Process",True,1935,255,1,100,4600,True,0,Arial,7,-2147483633,0)
+gui.F_Mult_MRP.lbl1.defaultvalue("")
+gui.F_Mult_MRP.lbl1.controlgroup(0)
+gui.F_Mult_MRP.lbl2.create(label,"Activity by Process",True,1935,255,1,7500,4600,True,0,Arial,7,-2147483633,0)
+gui.F_Mult_MRP.lbl2.defaultvalue("")
+gui.F_Mult_MRP.lbl2.controlgroup(0)
+gui.F_Mult_MRP.txtName.create(textbox,"",True,1860,300,0,5400,5200,True,0,Arial,7,-2147483643,1)
+gui.F_Mult_MRP.txtName.defaultvalue("")
+gui.F_Mult_MRP.txtName.controlgroup(0)
+gui.F_Mult_MRP.lbl3.create(label,"Inventory or Process",True,1935,255,1,5400,4900,True,0,Arial,7,-2147483633,0)
+gui.F_Mult_MRP.lbl3.defaultvalue("")
+gui.F_Mult_MRP.lbl3.controlgroup(0)
+gui.F_Mult_MRP.lbl4.create(label,"Quantity",True,1935,255,1,5400,5500,True,0,Arial,7,-2147483633,0)
+gui.F_Mult_MRP.lbl4.defaultvalue("")
+gui.F_Mult_MRP.lbl4.controlgroup(0)
+gui.F_Mult_MRP.txtQTY.create(textbox,"",True,1860,300,0,5400,5700,True,0,Arial,7,-2147483643,1)
+gui.F_Mult_MRP.txtQTY.defaultvalue("")
+gui.F_Mult_MRP.txtQTY.controlgroup(0)
+gui.F_Mult_MRP.lbl5.create(label,"Future Date",True,1935,255,1,5400,6000,True,0,Arial,7,-2147483633,0)
+gui.F_Mult_MRP.lbl5.defaultvalue("")
+gui.F_Mult_MRP.lbl5.controlgroup(0)
+gui.F_Mult_MRP.dtpFuture.create(datepicker)
+gui.F_Mult_MRP.dtpFuture.visible(True)
+gui.F_Mult_MRP.dtpFuture.size(1935,285)
+gui.F_Mult_MRP.dtpFuture.zorder(0)
+gui.F_Mult_MRP.dtpFuture.position(5400,6200)
+gui.F_Mult_MRP.dtpFuture.enabled(True)
+gui.F_Mult_MRP.dtpFuture.checkbox(False)
+gui.F_Mult_MRP.dtpFuture.defaultvalue("")
+gui.F_Mult_MRP.dtpFuture.controlgroup(0)
+gui.F_Mult_MRP.cmdSave.create(button)
+gui.F_Mult_MRP.cmdSave.caption("Save")
+gui.F_Mult_MRP.cmdSave.visible(True)
+gui.F_Mult_MRP.cmdSave.size(855,375)
+gui.F_Mult_MRP.cmdSave.zorder(0)
+gui.F_Mult_MRP.cmdSave.position(5400,6600)
+gui.F_Mult_MRP.cmdSave.enabled(True)
+gui.F_Mult_MRP.cmdSave.fontname("Arial")
+gui.F_Mult_MRP.cmdSave.fontsize(7)
+gui.F_Mult_MRP.cmdSave.event(click,cmdsave_click)
+gui.F_Mult_MRP.cmdSave.defaultvalue("")
+gui.F_Mult_MRP.cmdSave.controlgroup(0)
+gui.F_Mult_MRP.cmdExport.create(button)
+gui.F_Mult_MRP.cmdExport.caption("Excel")
+gui.F_Mult_MRP.cmdExport.visible(True)
+gui.F_Mult_MRP.cmdExport.size(855,375)
+gui.F_Mult_MRP.cmdExport.zorder(0)
+gui.F_Mult_MRP.cmdExport.position(5400,7700)
+gui.F_Mult_MRP.cmdExport.enabled(True)
+gui.F_Mult_MRP.cmdExport.fontname("Arial")
+gui.F_Mult_MRP.cmdExport.fontsize(7)
+gui.F_Mult_MRP.cmdExport.event(click,cmdexport_click)
+gui.F_Mult_MRP.cmdExport.defaultvalue("")
+gui.F_Mult_MRP.cmdExport.controlgroup(0)
+gui.F_Mult_MRP.cmdClear.create(button)
+gui.F_Mult_MRP.cmdClear.caption("Delete")
+gui.F_Mult_MRP.cmdClear.visible(True)
+gui.F_Mult_MRP.cmdClear.size(855,375)
+gui.F_Mult_MRP.cmdClear.zorder(0)
+gui.F_Mult_MRP.cmdClear.position(6400,6600)
+gui.F_Mult_MRP.cmdClear.enabled(True)
+gui.F_Mult_MRP.cmdClear.fontname("Arial")
+gui.F_Mult_MRP.cmdClear.fontsize(7)
+gui.F_Mult_MRP.cmdClear.event(click,cmdclear_click)
+gui.F_Mult_MRP.cmdClear.defaultvalue("")
+gui.F_Mult_MRP.cmdClear.controlgroup(0)
+gui.F_Mult_MRP.cmdReport.create(button)
+gui.F_Mult_MRP.cmdReport.caption("Report")
+gui.F_Mult_MRP.cmdReport.visible(True)
+gui.F_Mult_MRP.cmdReport.size(855,375)
+gui.F_Mult_MRP.cmdReport.zorder(0)
+gui.F_Mult_MRP.cmdReport.position(6400,7700)
+gui.F_Mult_MRP.cmdReport.enabled(True)
+gui.F_Mult_MRP.cmdReport.fontname("Arial")
+gui.F_Mult_MRP.cmdReport.fontsize(7)
+gui.F_Mult_MRP.cmdReport.event(click,cmdreport_click)
+gui.F_Mult_MRP.cmdReport.defaultvalue("")
+gui.F_Mult_MRP.cmdReport.controlgroup(0)
+gui.F_Mult_MRP.cmdRefresh.create(button)
+gui.F_Mult_MRP.cmdRefresh.caption("Refresh")
+gui.F_Mult_MRP.cmdRefresh.visible(True)
+gui.F_Mult_MRP.cmdRefresh.size(855,375)
+gui.F_Mult_MRP.cmdRefresh.zorder(0)
+gui.F_Mult_MRP.cmdRefresh.position(5900,8200)
+gui.F_Mult_MRP.cmdRefresh.enabled(True)
+gui.F_Mult_MRP.cmdRefresh.fontname("Arial")
+gui.F_Mult_MRP.cmdRefresh.fontsize(7)
+gui.F_Mult_MRP.cmdRefresh.event(click,cmdrefresh_click)
+gui.F_Mult_MRP.cmdRefresh.defaultvalue("")
+gui.F_Mult_MRP.cmdRefresh.controlgroup(0)
+gui.F_Mult_MRP.cmdUp.create(button)
+gui.F_Mult_MRP.cmdUp.caption("Move Up")
+gui.F_Mult_MRP.cmdUp.visible(True)
+gui.F_Mult_MRP.cmdUp.size(855,375)
+gui.F_Mult_MRP.cmdUp.zorder(0)
+gui.F_Mult_MRP.cmdUp.position(5400,7150)
+gui.F_Mult_MRP.cmdUp.enabled(True)
+gui.F_Mult_MRP.cmdUp.fontname("Arial")
+gui.F_Mult_MRP.cmdUp.fontsize(7)
+gui.F_Mult_MRP.cmdUp.event(click,cmdup_click)
+gui.F_Mult_MRP.cmdUp.defaultvalue("")
+gui.F_Mult_MRP.cmdUp.controlgroup(0)
+gui.F_Mult_MRP.cmdDown.create(button)
+gui.F_Mult_MRP.cmdDown.caption("Move Down")
+gui.F_Mult_MRP.cmdDown.visible(True)
+gui.F_Mult_MRP.cmdDown.size(855,375)
+gui.F_Mult_MRP.cmdDown.zorder(0)
+gui.F_Mult_MRP.cmdDown.position(6400,7150)
+gui.F_Mult_MRP.cmdDown.enabled(True)
+gui.F_Mult_MRP.cmdDown.fontname("Arial")
+gui.F_Mult_MRP.cmdDown.fontsize(7)
+gui.F_Mult_MRP.cmdDown.event(click,cmddown_click)
+gui.F_Mult_MRP.cmdDown.defaultvalue("")
+gui.F_Mult_MRP.cmdDown.controlgroup(0)
+
+
+Program.Sub.ScreenSU.End
+
+Program.Sub.Preflight.Start
+
+Variable.UDT.uPreview.Define("GRADE",String,TEXT_INFO1)
+Variable.UDT.uPreview.Define("CUSTOMER",String,NAME_CUSTOMER)
+Variable.UDT.uPreview.Define("PART_NUMBER",String,PART)
+Variable.UDT.uPreview.Define("DESCRIPTION",String,DESCRIPTION)
+Variable.UDT.uPreview.Define("PO_NUMBER",String,RECORD_NO)
+Variable.UDT.uPreview.Define("SALES_ORDER",String,ORDER_NO)
+Variable.UDT.uPreview.Define("LINE_ITEM",String,RECORD_NO)
+Variable.UDT.uPreview.Define("PO_DATE",Date,DATE_ORDER)
+Variable.UDT.uPreview.Define("PROMISE_DATE",Date,ITEM_PROMISE_DT)
+Variable.UDT.uPreview.Define("SALES_QTY",Float,QTY_ORDER)
+Variable.UDT.uPreview.Define("FEEDSTOCK",String,PART)
+Variable.UDT.uPreview.Define("FEEDSTOCK_DESCRIPTION",String,DESCRIPTION)
+Variable.UDT.uPreview.Define("YIELD",Float,QUANTITY)
+Variable.UDT.uPreview.Define("QTY_REQD",Long,QTY_REQD)
+Variable.UDT.uPreview.Define("EXPECTED_DATE",Date,EXPECTED_DATE)
+Variable.UDT.uPreview.Define("DAYS_LATE",Long,DAYS_LATE)
+Variable.UDT.uPreview.Define("PRINTED",String,FLAG_WO_PRTD)
+Variable.UDT.uPreview.Define("DATE_REQD",Date,DATE_DUE)
+Variable.UDT.uPreview.Define("Color",Long)
+Variable.UDT.uPreview.Define("DATE_RELEASED",Date,DATE_RELEASED)
+Variable.Global.sSQL.Declare(String)
+Variable.uGlobal.uPreview.Declare("uPreview")
+Variable.Global.sGrade.Declare(String)
+Variable.UDT.uSummary.Define("PROCESS",String)
+Variable.UDT.uSummary.Define("QTY",Long)
+Variable.UDT.uSummary.Define("EXPECTED_DATE_LT",Date)
+Variable.UDT.uSummary.Define("FUTURE_DATE",Date)
+Variable.UDT.uSummary.Define("LVL",Long)
+Variable.UDT.uSummary.Define("GROUP",Long)
+Variable.uGlobal.uSummary.Declare("uSummary")
+Variable.UDT.uActivity.Define("COL1",String)
+Variable.UDT.uActivity.Define("COL2",String)
+Variable.UDT.uActivity.Define("COL3",String)
+Variable.UDT.uActivity.Define("COL4",String)
+Variable.UDT.uActivity.Define("COL5",String)
+Variable.UDT.uActivity.Define("COL6",String)
+Variable.UDT.uActivity.Define("COL7",String)
+Variable.UDT.uActivity.Define("COL8",String)
+Variable.UDT.uActivity.Define("COL9",String)
+Variable.UDT.uActivity.Define("COL10",String)
+Variable.UDT.uActivity.Define("COL11",String)
+Variable.UDT.uActivity.Define("COL12",String)
+Variable.UDT.uActivity.Define("COL13",String)
+Variable.UDT.uActivity.Define("COL14",String)
+Variable.UDT.uActivity.Define("COL15",String)
+Variable.UDT.uActivity.Define("COL16",String)
+Variable.uGlobal.uActivity.Declare("uActivity")
+Variable.Global.Process.Declare(Long,0)
+Variable.Global.iBackColor.Declare(Long,0)
+Variable.Global.iProcCount.Declare(Long,0)
+Variable.Global.Grade.Declare(String)
+Variable.Global.iSummRows.Declare(Long,0)
+Variable.Global.sSize.Declare(String)
+Variable.Global.iRemainder.Declare(Long,0)
+Variable.Global.iRow.Declare(Long,-1)
+Variable.Global.BiRunID.Declare(Long,0)
+Variable.Global.bMultiRpt.Declare(Boolean,False)
+Program.Sub.Preflight.End
+
+Program.Sub.Main.Start
+F.Intrinsic.Control.SetErrorHandler("Main_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCount.Declare(Long,0)
+V.Local.iColor.Declare(Long)
+V.Local.iRed.Declare(Long)
+V.Local.iGreen.Declare(Long)
+V.Local.iBlue.Declare(Long)
+V.Local.iPosition.Declare(Long,0)
+
+
+F.ODBC.Connection!Con.OpenConnection(V.Ambient.PDSN,V.Ambient.PUser,V.Ambient.PPass)
+
+'redims iProcCount for the 8 positions available processes
+V.Global.iProcCount.Redim(0,7)
+'splits all the rgb values for all 8 processes leaving the color code to be set in global ibackcolor
+'ibackcolor from 0 to 7 is in the display position for summary by process
+F.Intrinsic.String.Split("155*!*194*!*230*!*189*!*215*!*238*!*221*!*235*!*247*!*244*!*176*!*132*!*248*!*203*!*173*!*252*!*228*!*214*!*255*!*217*!*102*!*255*!*230*!*153*!*255*!*242*!*204*!*169*!*208*!*142*!*198*!*224*!*180*!*226*!*239*!*218*!*132*!*151*!*176*!*172*!*185*!*202*!*214*!*220*!*228*!*117*!*113*!*113*!*174*!*170*!*170*!*208*!*206*!*206","*!*",V.Local.iColor)
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iColor.UBound)
+	V.Local.iRed.Set(V.Local.iColor(v.Local.iCount))
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	V.Local.iGreen.Set(V.Local.iColor(v.Local.iCount))
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	V.Local.iBlue.Set(V.Local.iColor(v.Local.iCount))
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	V.Global.iBackColor.RedimPreserve(0,V.Local.iPosition)
+	F.Intrinsic.UI.RGB(V.Local.iRed,V.Local.iGreen,V.Local.iBlue,V.Global.iBackColor(v.Local.iPosition))
+	F.Intrinsic.Math.Add(V.Local.iPosition,1,V.Local.iPosition)
+F.Intrinsic.Control.Loop
+
+Gui.SS_Form1..Show
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Main_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Main.End
+
+Program.Sub.F_Mult_MRP_Unload.Start
+F.Intrinsic.Control.SetErrorHandler("F_Mult_MRP_Unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+Gui.F_Mult_MRP..Visible(False)
+Gui.SS_Form1..Visible(True)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("F_Mult_MRP_Unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Gui.F_Mult_MRP..Visible(False)
+	Gui.SS_Form1..Visible(True)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.F_Mult_MRP_Unload.End
+
+Program.Sub.PreviewBuildstyle.Start
+F.Intrinsic.Control.SetErrorHandler("PreviewBuildstyle_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitles.Declare(String)
+V.Local.iCount.Declare(Long)
+V.Local.iWidth.Declare(Long)
+
+Gui.F_Mult_MRP.gsfgPreview.Rows(1)
+Gui.F_Mult_MRP.gsfgPreview.FixedRows(1)
+Gui.F_Mult_MRP.gsfgPreview.Cols(20)
+
+'all title names for summary
+F.Intrinsic.String.Split("Grade*!*Customer*!*Part Number*!*Description*!*PO Number*!*Sales Order*!*Line Item*!*PO Date*!*Promise Date*!*Sales Qty*!* *!*Feedstock*!*Feedstock Description*!*Yield*!*Qty Req'd*!*Expected Date Based On Supply*!*Days Late*!*Date Reqd*!*Printed*!*Date Released","*!*",V.Local.sTitles)
+'all widths for preview
+'F.Intrinsic.String.Split("677*!*2577*!*797*!*2577*!*1277*!*917*!*1157*!*1157*!*1157*!*1157*!*150*!*1157*!*2577*!*797*!*1157*!*1157*!*1135*!*1157*!*800*!*1157","*!*",V.Local.iWidth)
+Gui.F_Mult_MRP.gsfgPreview.SetColumnPercentages(".025:.11:.035:.115:.057:.041:.03:.051:.051:.03:.006:.041:.113:.03:.041:.051:.041:.051:.03:.051")
+'sets titles, locks, and formats them
+F.Intrinsic.Control.For(V.Local.iCount,0,V.Local.sTitles.UBound,1)
+	Gui.F_Mult_MRP.gsfgPreview.TextMatrix(V.Local.iCount,0,V.Local.sTitles(v.Local.iCount))
+	Gui.F_Mult_MRP.gsfgPreview.BuildStyle(1,V.Local.iCount,"Type","Locked",True)
+	Gui.F_Mult_MRP.gsfgPreview.BuildStyle(1,V.Local.iCount,"Format","Alignment",4)
+	Gui.F_Mult_MRP.gsfgPreview.BuildStyle(2,V.Local.iCount,"Type","Locked",True)
+	Gui.F_Mult_MRP.gsfgPreview.BuildStyle(2,V.Local.iCount,"Format","Alignment",4)
+'	Gui.F_Mult_MRP.gsfgPreview.ColWidth(V.Local.iCount,V.Local.iWidth(v.Local.iCount))
+F.Intrinsic.Control.Next(V.Local.iCount)
+Gui.F_Mult_MRP.gsfgPreview.BuildStyle(2,10,"Color","Back",V.Color.Gray)
+Gui.F_Mult_MRP.gsfgPreview.BuildStyle(1,10,"Color","Back",V.Color.Gray)
+Gui.F_Mult_MRP.gsfgPreview.RowHeight(0,600)
+Gui.F_Mult_MRP.gsfgPreview.ApplyStyle(0,1)
+
+'load udt to fg
+F.Intrinsic.Control.CallSub(Loadpreview)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("PreviewBuildstyle_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.PreviewBuildstyle.End
+
+Program.Sub.SummaryBuildstyle.Start
+F.Intrinsic.Control.SetErrorHandler("SummaryBuildstyle_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCount.Declare(Long,0)
+V.Local.sTitle.Declare(String)
+V.Local.iRows.Declare(Long)
+
+Gui.F_Mult_MRP.gsfgSummary.Rows(2)
+Gui.F_Mult_MRP.gsfgSummary.FixedRows(1)
+Gui.F_Mult_MRP.gsfgSummary.Cols(4)
+
+'set titles and widths and buildstyles of summary
+F.Intrinsic.String.Split("Process*!*Qty*!*Expected Date based on Lead Time*!*Future Date","*!*",V.Local.sTitle)
+F.Intrinsic.Control.For(V.Local.iCount,0,3,1)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(V.Local.iCount,0,V.Local.sTitle(v.Local.iCount))
+	Gui.F_Mult_MRP.gsfgSummary.BuildStyle(1,V.Local.iCount,"Type","Locked",True)
+	Gui.F_Mult_MRP.gsfgSummary.BuildStyle(1,V.Local.iCount,"Format","Alignment",4)
+	Gui.F_Mult_MRP.gsfgSummary.BuildStyle(2,V.Local.iCount,"Type","Locked",True)
+	Gui.F_Mult_MRP.gsfgSummary.BuildStyle(2,V.Local.iCount,"Format","Alignment",4)
+F.Intrinsic.Control.Next(V.Local.iCount)
+Gui.F_Mult_MRP.gsfgSummary.SetColumnPercentages(".429:.107:.232:.232")
+Gui.F_Mult_MRP.gsfgSummary.RowHeight(0,600)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(0,1)
+
+F.Intrinsic.Control.CallSub(Loadsummary)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("SummaryBuildstyle_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.SummaryBuildstyle.End
+
+Program.Sub.ActivityBuildstyle.Start
+F.Intrinsic.Control.SetErrorHandler("ActivityBuildstyle_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCol.Declare(Long,0)
+V.Local.iColCount.Declare(Long)
+V.Local.iCount.Declare(Float)
+V.Local.sPercent.Declare(String)
+
+Gui.F_Mult_MRP.gsfgActivity.Rows(1)
+'Gui.F_Mult_MRP.gsfgActivity.Cols(8)
+Gui.F_Mult_MRP.gsfgActivity.RowHeight(0,1)
+
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgActivity.Cols,1,V.Local.iColCount)
+F.Intrinsic.Control.For(V.Local.iCol,0,V.Local.iColCount,1)
+	Gui.F_Mult_MRP.gsfgActivity.BuildStyle(2,V.Local.iCol,"Format","Alignment",4)
+	Gui.F_Mult_MRP.gsfgActivity.BuildStyle(2,V.Local.iCol,"Type","Locked",True)
+F.Intrinsic.Control.Next(V.Local.iCol)
+
+V.Local.iCol.Set(1)
+F.Intrinsic.Math.Div(1,V.Screen.F_Mult_MRP!gsfgActivity.Cols,V.Local.iCount)
+F.Intrinsic.String.Build("{0}",V.Local.iCount,V.Local.sPercent)
+F.Intrinsic.Control.DoUntil(V.Local.iCol,>,V.Local.iColCount)
+	F.Intrinsic.String.Build("{0}:{1}",V.Local.sPercent,V.Local.iCount,V.Local.sPercent)
+	F.Intrinsic.Math.Add(V.Local.iCol,1,V.Local.iCol)
+F.Intrinsic.Control.Loop
+Gui.F_Mult_MRP.gsfgActivity.SetColumnPercentages(V.Local.sPercent)
+
+'F.Intrinsic.Control.CallSub(Loadactivity)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ActivityBuildstyle_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ActivityBuildstyle.End
+
+Program.Sub.LoadSummary.Start
+F.Intrinsic.Control.SetErrorHandler("LoadSummary_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCount.Declare(Long,0)
+V.Local.sCol.Declare(String)
+V.Local.sCol2.Declare(String)
+V.Local.iLT.Declare(Long,0)
+V.Local.dDate.Declare(Date)
+V.Local.iProcesses.Declare(Long)
+
+
+'activity columns to be used for pulling data into summary
+F.Intrinsic.String.Split("COL1*!*COL3*!*COL5*!*COL7*!*COL9*!*COL11*!*COL13*!*COL15","*!*",V.Local.sCol)
+F.Intrinsic.String.Split("*!*COL2*!*COL4*!*COL6*!*COL8*!*COL10*!*COL12*!*COL14*!*COL16","*!*",V.Local.sCol2)
+
+F.Intrinsic.Math.Div(V.Screen.F_Mult_MRP!gsfgActivity.Cols,2,V.Local.iProcesses)
+F.Intrinsic.Math.Sub(V.Local.iProcesses,1,V.Local.iProcesses)
+V.uGlobal.uSummary.Redim(-1,-1)
+'cycles through all of the processes and sets qty and expected date based on lead time
+V.uGlobal.uSummary.Redim(0,V.Local.iProcesses)
+F.Intrinsic.Control.For(V.Local.iCount,0,V.Local.iProcesses,1)
+	V.uGlobal.uSummary(V.Local.iCount)!PROCESS.Set(V.uGlobal.uActivity(0)![v.Local.sCol(V.Local.iCount)])
+	v.uGlobal.uSummary(v.Local.iCount)!QTY.Set(v.uGlobal.uActivity(2)![v.local.sCol(v.Local.iCount)])
+	'first row is todays date
+	F.Intrinsic.Control.If(V.Local.iCount,=,0)
+		V.uGlobal.uSummary(V.Local.iCount)!EXPECTED_DATE_LT.Set(V.Ambient.Date)
+	'second row is today plus graph stock LT, third row is today plus first and second LT
+	F.Intrinsic.Control.ElseIf(V.Local.iCount,>,0,"AND",V.Local.iCount,<,V.Local.iProcesses)
+		F.Intrinsic.Math.Add(V.Local.iLT,V.uGlobal.uActivity(2)![v.Local.sCol2(v.local.iCount)],v.Local.iLT)
+		F.Intrinsic.Date.DateAdd("D",V.Local.iLT,V.Ambient.Date,V.Local.dDate)
+		V.uGlobal.uSummary(v.Local.iCount)!EXPECTED_DATE_LT.Set(V.Local.dDate)
+	'fourth row is today plus first second, third and fourth LT
+	F.Intrinsic.Control.ElseIf(V.Local.iCount,=,V.Local.iProcesses)
+		F.Intrinsic.Math.Add(V.Local.iLT,V.uGlobal.uActivity(2)![v.Local.sCol2(v.local.iCount)],v.Local.iLT)
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+		F.Intrinsic.Math.Add(V.Local.iLT,V.uGlobal.uActivity(2)![v.Local.sCol2(v.Local.iCount)],V.Local.iLT)
+		F.Intrinsic.Math.Sub(V.Local.iCount,1,V.Local.iCount)
+		F.Intrinsic.Date.DateAdd("D",V.Local.iLT,V.Ambient.Date,V.Local.dDate)
+		V.uGlobal.uSummary(v.Local.iCount)!EXPECTED_DATE_LT.Set(V.Local.dDate)
+	F.Intrinsic.Control.EndIf
+	V.uGlobal.uSummary(V.Local.iCount)!LVL.Set(V.Local.iCount)
+	V.uGlobal.uSummary(V.Local.iCount)!GROUP.Set(1)
+F.Intrinsic.Control.Next(V.Local.iCount)
+Gui.F_Mult_MRP.gsfgSummary.LoadFromUDT("uGlobal.uSummary","PROCESS::0*!*QTY::1*!*EXPECTED_DATE_LT::2",2)
+'sets global rows so it can be used to clear later if needed
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgSummary.Rows,1,V.Global.iSummRows)
+V.Local.iLT.Set(V.Screen.F_Mult_MRP!gsfgSummary.Rows)
+'after the standard is loading in load in the custom rows
+F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' ORDER BY LVL ASC",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("rstCustSum",V.Global.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.Con!rstCustSum.EOF,=,True)
+	F.Intrinsic.Math.Add(V.Local.iLT,1,V.Local.iLT)
+	F.Intrinsic.Math.Add(V.Local.iProcesses,1,V.Local.iProcesses)
+	V.uGlobal.uSummary.RedimPreserve(0,V.Local.iProcesses)
+	Gui.F_Mult_MRP.gsfgSummary.Rows(V.Local.iLT)
+	F.Intrinsic.Math.Sub(V.Local.iLT,1,V.Local.iLT)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iLT,V.ODBC.Con!rstCustSum.FieldValTrim!PROCESS)
+	V.uGlobal.uSummary(v.Local.iProcesses)!PROCESS.Set(V.ODBC.Con!rstCustSum.FieldValTrim!PROCESS)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iLT,V.ODBC.Con!rstCustSum.FieldValLong!QTY)
+	V.uGlobal.uSummary(V.Local.iProcesses)!QTY.Set(V.ODBC.Con!rstCustSum.FieldValLong!QTY)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(2,V.Local.iLT,V.ODBC.Con!rstCustSum.FieldVal!EXP_DATE)
+	V.uGlobal.uSummary(V.Local.iProcesses)!EXPECTED_DATE_LT.Set(V.ODBC.Con!rstCustSum.FieldVal!EXP_DATE)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(3,V.Local.iLT,V.ODBC.Con!rstCustSum.FieldVal!FUTURE_DATE)
+	V.uGlobal.uSummary(V.Local.iProcesses)!FUTURE_DATE.Set(V.ODBC.Con!rstCustSum.FieldVal!FUTURE_DATE)
+	V.uGlobal.uSummary(V.Local.iProcesses)!LVL.Set(V.ODBC.Con!rstCustSum.FieldVal!LVL)
+	V.uGlobal.uSummary(V.Local.iProcesses)!GROUP.Set(2)
+	F.Intrinsic.Math.Add(V.Local.iLT,1,V.Local.iLT)
+	F.ODBC.Con!rstCustSum.MoveNext
+F.Intrinsic.Control.Loop
+F.Intrinsic.Math.Sub(V.Local.iLT,1,V.Local.iLT)
+V.Local.iCount.Set(1)
+V.Global.Process.Set(0)
+
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iLT)
+	Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iCount,V.Global.iBackColor(v.Global.Process),V.Color.Black)
+	Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iCount,2)
+	F.Intrinsic.Math.Add(V.Global.Process,1,V.Global.Process)
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadSummary_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadSummary.End
+
+Program.Sub.LoadPreview.Start
+F.Intrinsic.Control.SetErrorHandler("LoadPreview_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iUBound.Declare(Long,0)
+V.Local.iQty.Declare(Long,0)
+V.Local.iTemp.Declare(Long)
+V.Local.dDate.Declare(Date)
+V.Local.sJob.Declare(String)
+V.Local.iCount.Declare(Long,1)
+V.Local.sSuffix.Declare(String)
+V.Local.iRemainder.Declare(Long,0)
+V.Local.iOldQty.Declare(Long,0)
+
+V.Global.Process.Set(0)
+'RESET UPREVIEW UDT
+V.uGlobal.uPreview.Redim(-1,-1)
+'V.uGlobal.uPreview.Redim(0,0)
+'SELECT ALL PARTS THAT ARE GRADE 47
+F.Intrinsic.String.Build("SELECT PART FROM V_INVENTORY_MST2 WHERE TEXT_INFO1 = '{0}' AND TEXT_INFO2 = '{1}' ",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST",V.Global.sSQL)
+'CYCLE THROUGH ALL OF THE PARTS UNTIL THERE IS NO MORE LEFT
+F.Intrinsic.Control.DoUntil(V.ODBC.Con!rst.EOF,=,True)
+	'SELECT PARENT WHERE THE PART IS THE SAME
+	F.Intrinsic.String.Build("SELECT PARENT FROM V_BOM_MSTR WHERE PARENT = '{0}' AND SEQUENCE_BOM = '0000' ",V.ODBC.Con!rst.FieldVal!PART,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST1",V.Global.sSQL)
+	'IF THERE IS A PART THAT IS A PARENT THEN GATHER THE REST OF THE INFORMATION FOR IT
+	F.Intrinsic.Control.If(V.ODBC.Con!RST1.EOF,=,False)
+		F.Intrinsic.String.Build("SELECT DESCRIPTION FROM V_INVENTORY_MSTR WHERE PART = '{0}' ",V.ODBC.Con!RST1.FieldVal!PARENT,V.Global.sSQL)
+		F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST2",V.Global.sSQL)
+		F.Intrinsic.String.Build("SELECT OL.ORDER_NO, OL.RECORD_NO, OBT.NAME_CUSTOMER, OL.DATE_ORDER, OL.DATE_ITEM_PROM, OL.QTY_ORDERED FROM V_ORDER_LINES AS OL JOIN V_ORDER_BILL_TO AS OBT ON OL.ORDER_NO = OBT.ORDER_NO  WHERE OL.PART = '{0}' ",V.ODBC.Con!RST1.FieldVal!PARENT,V.Global.sSQL)
+		F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST3",V.Global.sSQL)
+		'CYCLE THROUGH ALL OF THE FOUND ORDERS
+		F.Intrinsic.Control.DoUntil(V.ODBC.Con!RST3.EOF,=,True)
+			'CUSTOMER PO IS THE LAST PIECE OF SALES DEMAND
+			F.Intrinsic.String.Build("SELECT CUSTOMER_PO FROM V_ORDER_HEADER WHERE ORDER_NO = '{0}' ",V.ODBC.Con!RST3.FieldVal!ORDER_NO,V.Global.sSQL)
+			F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST4",V.Global.sSQL)
+			F.Intrinsic.Control.If(V.ODBC.Con!RST4.EOF,=,False)
+				'SELECT FEEDSTOCK (FIRST LEVEL BOM)
+				F.Intrinsic.String.Build(" SELECT DISTINCT BOM.PART, BOM.QUANTITY, (({0} + GCG.SCRAP)*BOM.QUANTITY) AS QTY_REQD, GCG.SCRAP FROM V_BOM_MSTR AS BOM JOIN GCG_3051_MULT_MRP AS GCG ON BOM.PART = GCG.PART WHERE BOM.SEQUENCE_BOM = '0200' AND BOM.PARENT = '{1}' ",V.ODBC.Con!RST3.FieldVal!QTY_ORDERED,V.ODBC.Con!RST1.FieldVal!PARENT,V.Global.sSQL)
+				F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST5",V.Global.sSQL)
+				F.Intrinsic.Control.If(V.ODBC.Con!RST5.EOF,=,True)
+					F.ODBC.Con!RST5.Close
+					F.Intrinsic.String.Build(" SELECT DISTINCT BOM.PART, BOM.QUANTITY, (({0} + GCG.SCRAP)*BOM.QUANTITY) AS QTY_REQD, GCG.SCRAP FROM V_BOM_MSTR AS BOM JOIN GCG_3051_MULT_MRP AS GCG ON BOM.PART = GCG.PART WHERE BOM.SEQUENCE_BOM = '0100' AND BOM.PARENT = '{1}' ",V.ODBC.Con!RST3.FieldVal!QTY_ORDERED,V.ODBC.Con!RST1.FieldVal!PARENT,V.Global.sSQL)
+					F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST5",V.Global.sSQL)
+				F.Intrinsic.Control.EndIf
+					F.Intrinsic.Control.If(V.ODBC.Con!RST5.EOF,=,False)
+					'FEED STOCK DESCRIPTION
+					F.Intrinsic.String.Build("SELECT DESCRIPTION FROM V_INVENTORY_MSTR WHERE PART = '{0}' ",V.ODBC.Con!RST5.FieldVal!PART,V.Global.sSQL)
+					F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST6",V.Global.sSQL)
+					'DATE REQD
+					V.Local.sJob.Set(V.ODBC.Con!RST3.FieldVal!ORDER_NO)
+					V.Local.sSuffix.Set(V.ODBC.Con!RST3.FieldVal!RECORD_NO)
+					F.Intrinsic.String.Build("SELECT DISTINCT COM.DATE_DUE, JOB.FLAG_WO_PRTD, JOB.DATE_RELEASED FROM V_JOB_COMMITMENTS AS COM JOIN V_JOB_HEADER AS JOB ON COM.JOB = JOB.JOB AND COM.SUFFIX = JOB.SUFFIX WHERE COM.PART = '{0}' AND JOB.JOB = '{1}' AND JOB.SUFFIX = '{2}' ",V.ODBC.Con!RST5.FieldVal!PART,V.Local.sJob.right6,V.Local.sSuffix.left3,V.Global.sSQL)
+					F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST7",V.Global.sSQL)
+					F.Intrinsic.Control.If(V.ODBC.Con!RST7.EOF,=,False)
+						'INCRAMENT UPREVIEW UDT
+						F.Intrinsic.Control.If(V.Local.iUBound,=,0)
+							V.uGlobal.uPreview.Redim(0,V.Local.iUBound)
+						F.Intrinsic.Control.Else
+							V.uGlobal.uPreview.RedimPreserve(0,V.Local.iUBound)
+						F.Intrinsic.Control.EndIf
+						'ADD SALES DEMAND INFORMATION TO UDT
+						V.uGlobal.uPreview(V.Local.iUBound)!GRADE.Set(V.Global.sGrade)
+						V.uGlobal.uPreview(V.Local.iUBound)!CUSTOMER.Set(V.ODBC.Con!RST3.FieldValTrim!NAME_CUSTOMER)
+						V.uGlobal.uPreview(V.Local.iUBound)!PART_NUMBER.Set(V.ODBC.Con!RST1.FieldValTrim!PARENT)
+						V.uGlobal.uPreview(V.Local.iUBound)!DESCRIPTION.Set(V.ODBC.Con!RST2.FieldValTrim!DESCRIPTION)
+						V.uGlobal.uPreview(V.Local.iUBound)!PO_NUMBER.Set(V.ODBC.Con!RST4.FieldValTrim!CUSTOMER_PO)
+						V.uGlobal.uPreview(V.Local.iUBound)!SALES_ORDER.Set(V.ODBC.Con!RST3.FieldValTrim!ORDER_NO)
+						V.uGlobal.uPreview(V.Local.iUBound)!LINE_ITEM.Set(V.Local.sSuffix.Left3)
+						V.uGlobal.uPreview(V.Local.iUBound)!PO_DATE.Set(V.ODBC.Con!RST3.FieldValTrim!DATE_ORDER)
+						V.uGlobal.uPreview(V.Local.iUBound)!PROMISE_DATE.Set(V.ODBC.Con!RST3.FieldValTrim!DATE_ITEM_PROM)
+						V.uGlobal.uPreview(V.Local.iUBound)!SALES_QTY.Set(V.ODBC.Con!RST3.FieldValTrim!QTY_ORDERED)
+						'ADD FEEDSTOCK INFORMATION TO UDT
+						V.uGlobal.uPreview(V.Local.iUBound)!FEEDSTOCK.Set(V.ODBC.Con!RST5.FieldValTrim!PART)
+						V.uGlobal.uPreview(V.Local.iUBound)!FEEDSTOCK_DESCRIPTION.Set(V.ODBC.Con!RST6.FieldValTrim!DESCRIPTION)
+						V.uGlobal.uPreview(V.Local.iUBound)!YIELD.Set(V.ODBC.Con!RST5.FieldValTrim!QUANTITY)
+						'if yield is 1 don't add scrap to the qty
+						F.Intrinsic.Control.If(V.uGlobal.uPreview(v.Local.iUBound)!YIELD,=,1)
+							F.Intrinsic.Math.Sub(V.ODBC.Con!RST5.FieldValTrim!QTY_REQD,V.ODBC.Con!RST5.FieldValTrim!SCRAP,V.uGlobal.uPreview(v.Local.iUBound)!QTY_REQD)
+						F.Intrinsic.Control.Else
+							V.uGlobal.uPreview(V.Local.iUBound)!QTY_REQD.Set(V.ODBC.Con!RST5.FieldValTrim!QTY_REQD)
+						F.Intrinsic.Control.EndIf
+						'expected date and days late set below after sort
+						V.uGlobal.uPreview(V.Local.iUBound)!DATE_REQD.Set(V.ODBC.Con!RST7.FieldValTrim!DATE_DUE)
+						V.uGlobal.uPreview(V.Local.iUBound)!PRINTED.Set(V.ODBC.Con!RST7.FieldValTrim!FLAG_WO_PRTD)
+						V.uGlobal.uPreview(V.Local.iUBound)!DATE_RELEASED.Set(V.ODBC.Con!RST7.FieldValTrim!DATE_RELEASED)
+						'INCRAMENT UBOUND FOR UDT
+						F.Intrinsic.Math.Add(V.Local.iUBound,1,V.Local.iUBound)
+					F.Intrinsic.Control.EndIf
+					F.ODBC.Con!RST7.Close
+					F.ODBC.Con!RST6.Close
+				F.Intrinsic.Control.EndIf
+				F.ODBC.Con!RST5.Close
+			F.Intrinsic.Control.EndIf
+			F.ODBC.Con!RST4.Close
+			F.ODBC.Con!RST3.MoveNext
+		F.Intrinsic.Control.Loop
+		F.ODBC.Con!RST3.Close
+		F.ODBC.Con!RST2.Close
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Con!RST1.Close
+	F.ODBC.Con!RST.MoveNext
+F.Intrinsic.Control.Loop
+F.ODBC.Con!RST.Close
+
+'sort by date required and then set expected date and days late
+F.Intrinsic.Variable.UDTMultiQuickSort(V.uGlobal.uPreview!DATE_REQD,False)
+V.Local.iUBound.Set(0)
+V.Global.iProcCount.Redim(-1,-1)
+V.Global.iProcCount.Redim(0,V.uGlobal.uSummary.UBound)
+V.Global.iRemainder.Redim(0,0)
+V.Global.iRemainder.Redim(0,V.uGlobal.uSummary.UBound)
+F.Intrinsic.Control.DoUntil(V.Local.iUBound,>,V.uGlobal.uSummary.UBound)
+	V.Global.iRemainder(v.Local.iUBound).Set(V.uGlobal.uSummary(v.Local.iUBound)!QTY)
+	F.Intrinsic.Math.Add(V.Local.iUBound,1,V.Local.iUBound)
+F.Intrinsic.Control.Loop
+V.Local.iUBound.Set(0)
+F.Intrinsic.Control.DoUntil(V.Local.iUBound,>,V.uGlobal.uPreview.UBound)
+	'sets the qty to be passed
+	V.Local.iQty.Set(V.uGlobal.uPreview(v.Local.iUBound)!QTY_REQD)
+	F.Intrinsic.Control.CallSub(Expecteddatesupply,"iUBound",V.Local.iUBound,"iQty",V.Local.iQty)
+	'sets days late with the difference of promise date and expected date
+	F.Intrinsic.Date.DateDiff("D",V.uGlobal.uPreview(V.Local.iUBound)!PROMISE_DATE,V.uGlobal.uPreview(V.Local.iUBound)!EXPECTED_DATE,V.Local.iTemp)
+	V.uGlobal.uPreview(v.Local.iUBound)!DAYS_LATE.Set(V.Local.iTemp)
+	F.Intrinsic.Math.Add(V.Local.iUBound,1,V.Local.iUBound)
+F.Intrinsic.Control.Loop
+F.Intrinsic.Control.If(V.uGlobal.uPreview.UBound,<>,-1)
+	Gui.F_Mult_MRP.gsfgPreview.LoadFromUDT("uGlobal.uPreview","GRADE::0*!*CUSTOMER::1*!*PART_NUMBER::2*!*DESCRIPTION::3*!*PO_NUMBER::4*!*SALES_ORDER::5*!*LINE_ITEM::6*!*PO_DATE::7*!*PROMISE_DATE::8*!*SALES_QTY::9*!*FEEDSTOCK::11*!*FEEDSTOCK_DESCRIPTION::12*!*YIELD::13*!*QTY_REQD::14*!*EXPECTED_DATE::15*!*DAYS_LATE::16*!*DATE_REQD::17*!*PRINTED::18*!*DATE_RELEASED::19",2)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.CallSub(Previewcolor)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadPreview_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadPreview.End
+
+Program.Sub.LoadActivity.Start
+F.Intrinsic.Control.SetErrorHandler("LoadActivity_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCount.Declare(Long,0)
+V.Local.iCol3.Declare(Long,4)
+V.Local.iCol7.Declare(Long,4)
+V.Local.iCol11.Declare(Long,4)
+V.Local.iCol15.Declare(Long,4)
+V.Local.iCol4.Declare(Long)
+V.Local.iCol8.Declare(Long)
+V.Local.iCol12.Declare(Long)
+V.Local.iCol16.Declare(Long)
+V.Local.sCol.Declare(String)
+V.Local.sColValue.Declare(String)
+V.Local.sActiveCols.Declare(String)
+V.Local.iColCount.Declare(Long,0)
+
+'create activity utd
+V.uGlobal.uActivity.Redim(-1,-1)
+V.uGlobal.uActivity.Redim(0,3)
+'added a blank at the end of the array so it doesn't error out of bounds in the loop
+F.Intrinsic.String.Split("COL1*!*COL2*!*COL3*!*COL4*!*COL5*!*COL6*!*COL7*!*COL8*!*COL9*!*COL10*!*COL11*!*COL12*!*COL13*!*COL14*!*COL15*!*COL16*!*","*!*",V.Local.sCol)
+'loads all from gcg_maint_mrp and puts it in activity
+V.Local.sColValue.Set(V.Local.sCol(V.Local.iCount))
+F.Intrinsic.String.Build("SELECT GCG.PART, GCG.PROCESS, GCG.LEAD_TIME, INV.QTY_ONHAND FROM GCG_3051_MULT_MRP AS GCG, V_INVENTORY_MSTR AS INV WHERE GCG.PART = INV.PART AND GCG.GRADE = '{0}' AND GCG.MSIZE = '{1}' ORDER BY GCG.LVL ASC",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST",V.Global.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.Con!RST.EOF,=,True)
+	V.uGlobal.uActivity(0)![V.Local.sColValue].Set(V.ODBC.Con!RST.FieldValTrim!PROCESS)
+	V.uGlobal.uActivity(1)![V.Local.sColValue].Set("Total")
+	'this will set WIP to 0 but will get populated with the total later in the code
+	V.uGlobal.uActivity(2)![V.Local.sColValue].Set(V.ODBC.Con!RST.FieldValTrim!QTY_ONHAND)
+	F.Intrinsic.Control.If(V.Local.iCount,=,2,"OR",V.Local.iCount,=,6,V.Local.iCount,=,10,V.Local.iCount,=,14)
+		V.uGlobal.uActivity(3)![V.Local.sColValue].Set("Jobs")
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Math.Add(V.Local.iColCount,1,V.Local.iColCount)
+	V.Local.sColValue.Set(V.Local.sCol(v.Local.iCount))
+	V.uGlobal.uActivity(0)![V.Local.sColValue].Set(V.ODBC.Con!RST.FieldValTrim!PART)
+	V.uGlobal.uActivity(1)![V.Local.sColValue].Set("LT")
+	V.uGlobal.uActivity(2)![V.Local.sColValue].Set(V.ODBC.Con!RST.FieldValTrim!LEAD_TIME)
+	F.Intrinsic.Control.If(V.Local.iCount,=,3,"OR",V.Local.iCount,=,7,V.Local.iCount,=,11,V.Local.iCount,=,15)
+		V.uGlobal.uActivity(3)![V.Local.sColValue].Set("QTY")
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Math.Add(V.Local.iColCount,1,V.Local.iColCount)
+	V.Local.sColValue.Set(V.Local.sCol(v.Local.iCount))
+	F.ODBC.Con!RST.MoveNext
+F.Intrinsic.Control.Loop
+
+F.ODBC.Con!RST.Close
+
+V.Local.iCount.Set(4)
+
+'selects all jobs that are not closed from the parts in GCG_3051_MULT_MRP and puts them under the respected process
+'changing job.qty_order - job.qty_completed  so that qty_order is now qty_customer
+F.Intrinsic.String.Build("SELECT  GCG.PROCESS,JOB, (JOB.QTY_CUSTOMER - JOB.QTY_COMPLETED) AS WIP FROM GCG_3051_MULT_MRP AS GCG  JOIN V_JOB_HEADER AS JOB ON GCG.PART = JOB.PART WHERE JOB.SUFFIX <> 'XXX' AND GCG.PROCESS NOT LIKE '%Stock%' AND JOB.DATE_CLOSED = '1900-01-01'  AND GCG.GRADE = '{0}' AND GCG.MSIZE = '{1}' ORDER BY GCG.LVL ASC, JOB ASC",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST",V.Global.sSQL)
+F.Intrinsic.Control.DoUntil(V.ODBC.Con!RST.EOF,=,True)
+	V.uGlobal.uActivity.RedimPreserve(0,V.Local.iCount)
+	'finds the correct process column and sets the job and how many are being made
+	F.Intrinsic.Control.SelectCase(V.ODBC.Con!RST.FieldValTrim!PROCESS)
+		'COL3 WIP
+		F.Intrinsic.Control.Case(V.uGlobal.uActivity(0)!COL3.Trim)
+			V.uGlobal.uActivity(V.Local.iCol3)!COL3.Set(V.ODBC.Con!RST.FieldValTrim!JOB)
+			V.uGlobal.uActivity(V.Local.iCol3)!COL4.Set(V.ODBC.Con!RST.FieldValTrim!WIP)
+			F.Intrinsic.Math.Add(V.Local.iCol4,V.uGlobal.uActivity(V.Local.iCol3)!COL4,V.Local.iCol4)
+			F.Intrinsic.Math.Add(V.Local.iCol3,1,V.Local.iCol3)
+		'COL7 WIP
+		F.Intrinsic.Control.Case(V.uGlobal.uActivity(0)!COL7.Trim)
+			V.uGlobal.uActivity(V.Local.iCol7)!COL7.Set(V.ODBC.Con!RST.FieldValTrim!JOB)
+			V.uGlobal.uActivity(V.Local.iCol7)!COL8.Set(V.ODBC.Con!RST.FieldValTrim!WIP)
+			F.Intrinsic.Math.Add(V.Local.iCol8,V.uGlobal.uActivity(V.Local.iCol7)!COL8,V.Local.iCol8)
+			F.Intrinsic.Math.Add(V.Local.iCol7,1,V.Local.iCol7)
+		'COL11 WIP
+		F.Intrinsic.Control.Case(V.uGlobal.uActivity(0)!COL11.Trim)
+			V.uGlobal.uActivity(V.Local.iCol11)!COL11.Set(V.ODBC.Con!RST.FieldValTrim!JOB)
+			V.uGlobal.uActivity(V.Local.iCol11)!COL12.Set(V.ODBC.Con!RST.FieldValTrim!WIP)
+			F.Intrinsic.Math.Add(V.Local.iCol12,V.uGlobal.uActivity(V.Local.iCol11)!COL12,V.Local.iCol12)
+			F.Intrinsic.Math.Add(V.Local.iCol11,1,V.Local.iCol11)
+		'COL15 WIP
+		F.Intrinsic.Control.case(V.uGlobal.uActivity(0)!COL15.Trim)
+			V.uGlobal.uActivity(V.Local.iCol15)!COL15.Set(V.ODBC.Con!RST.FieldValTrim!JOB)
+			V.uGlobal.uActivity(V.Local.iCol15)!COL16.Set(V.ODBC.Con!RST.FieldValTrim!WIP)
+			F.Intrinsic.Math.Add(V.Local.iCol16,V.uGlobal.uActivity(V.Local.iCol15)!COL16,V.Local.iCol16)
+			F.Intrinsic.Math.Add(V.Local.iCol15,1,V.Local.iCol15)
+	F.Intrinsic.Control.EndSelect
+
+	F.ODBC.Con!RST.MoveNext
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+F.ODBC.Con!RST.Close
+'sets column job qty totals
+V.uGlobal.uActivity(2)!COL3.set(V.Local.iCol4)
+V.uGlobal.uActivity(2)!COL7.set(V.Local.iCol8)
+V.uGlobal.uActivity(2)!COL11.set(V.Local.iCol12)
+V.uGlobal.uActivity(2)!COL15.set(V.Local.iCol16)
+
+'creating a string that displays the active columns for load from udt in the correct format
+V.Local.iCount.Set(0)
+Gui.F_Mult_MRP.gsfgActivity.ClearStyle(2)
+Gui.F_Mult_MRP.gsfgActivity.Cols(V.Local.iColCount)
+F.Intrinsic.Control.CallSub(Activitybuildstyle)
+F.Intrinsic.Math.Sub(V.Local.iColCount,1,V.Local.iColCount)
+F.Intrinsic.String.Build("{0}::{1}",V.Local.sCol(v.Local.iCount),V.Local.iCount,V.Local.sActiveCols)
+F.Intrinsic.Control.For(V.Local.iCount,1,V.Local.iColCount,1)
+	F.Intrinsic.String.Build("{0}*!*{1}::{2}",V.Local.sActiveCols,V.Local.sCol(v.Local.iCount),V.Local.iCount,V.Local.sActiveCols)
+F.Intrinsic.Control.Next(V.Local.iCount)
+
+'load udt to flexgrid
+Gui.F_Mult_MRP.gsfgActivity.LoadFromUDT("uGlobal.uActivity",V.Local.sActiveCols,2)
+
+V.Global.Process.Set(0)
+V.Local.iCount.Set(0)
+'reusing icol3 as a row counter
+V.Local.iCol3.Set(V.Screen.F_Mult_MRP!gsfgActivity.Cols)
+F.Intrinsic.Math.Sub(V.Local.iCol3,1,V.Local.iCol3)
+'loop through all of the activity columns
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iCol3)
+			'BackColor does not work in .NET
+	Gui.F_Mult_MRP.gsfgActivity.GSGOverrideProperty(V.Local.iCount,1,"BackColor",V.Global.iBackColor(v.Global.Process))
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+			'BackColor does not work in .NET
+	Gui.F_Mult_MRP.gsfgActivity.GSGOverrideProperty(V.Local.iCount,1,"BackColor",V.Global.iBackColor(v.Global.Process))
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Math.Add(V.Global.Process,1,V.Global.Process)
+F.Intrinsic.Control.Loop
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("LoadActivity_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+F.Intrinsic.UI.Msgbox(V.Local.sError)
+F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.LoadActivity.End
+
+Program.Sub.ExpectedDateSupply.Start
+F.Intrinsic.Control.SetErrorHandler("ExpectedDateSupply_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iQty.Declare(Long)
+V.Local.iDays.Declare(Long)
+V.Local.iAdditional.Declare(Long)
+V.Local.iUBound.Declare(Long,0)
+V.Local.iLBound.Declare(Long)
+V.Local.iRemain.Declare(Long)
+
+V.Global.Process.Set(0)
+'if yield is 1 only add 14 days to date else 28 days
+F.Intrinsic.Control.if(V.uGlobal.uPreview(v.Args.iUBound.Long)!YIELD,=,1)
+	V.Local.iDays.Set(14)
+F.Intrinsic.Control.Else
+	V.Local.iDays.Set(28)
+F.Intrinsic.Control.EndIf
+
+'cycles through all of the summary udt until it finds one that it can go into. If it can't it sets the cell to white and moves on.
+F.Intrinsic.Control.DoUntil(V.Local.iUBound,>,V.uGlobal.uSummary.UBound)
+	'if the first time simply subtract from qty
+	F.Intrinsic.Control.If(V.Local.iUBound,=,0)
+		F.Intrinsic.Math.Sub(V.Global.iRemainder(v.Local.iUBound),V.Args.iQty.Long,V.Local.iRemain)
+	'not first time add in all the remainders and subtract from qty
+	F.Intrinsic.Control.Else
+		V.Local.iLBound.Set(V.Local.iUBound)
+		V.Local.iRemain.Set(0)
+		F.Intrinsic.Control.DoUntil(V.Local.iLBound,<,0)
+			F.Intrinsic.Math.Add(V.Local.iRemain,V.Global.iRemainder(v.Local.iLBound),V.Local.iRemain)
+			F.Intrinsic.Math.Sub(V.Local.iLBound,1,V.Local.iLBound)
+		F.Intrinsic.Control.Loop
+		F.Intrinsic.Math.Sub(V.Local.iRemain,V.Args.iQty.Long,V.Local.iRemain)
+	F.Intrinsic.Control.EndIf
+	'checks to see if it can go into the quantity remaining. if it cant then set the backgroud to white and date and keep going.
+	F.Intrinsic.Control.If(V.Local.iRemain,<,0)
+		V.uGlobal.uPreview(v.Args.iUbound)!Color.Set(V.Color.White)
+		F.Intrinsic.Date.DateAdd("D",V.Local.iDays,V.uGlobal.uSummary(v.Local.iUBound)!EXPECTED_DATE_LT,V.uGlobal.uPreview(v.Args.iUBound)!EXPECTED_DATE)
+		F.Intrinsic.Math.Add(V.Local.iUBound,1,V.Local.iUBound)
+		F.Intrinsic.Math.Add(V.Global.Process,1,V.Global.Process)
+	'the qty was able to go into a process. add that color process to the color column and exit
+	F.Intrinsic.Control.Else
+		V.uGlobal.uPreview(v.Args.iUbound)!Color.Set(V.Global.iBackColor(v.Local.iUBound))
+		F.Intrinsic.Date.DateAdd("D",V.Local.iDays,V.uGlobal.uSummary(v.Local.iUBound)!EXPECTED_DATE_LT,V.uGlobal.uPreview(v.Args.iUBound)!EXPECTED_DATE)
+		V.Global.iRemainder(v.Local.iUBound).Set(V.Local.iRemain)
+		V.Local.iLBound.Set(v.Local.iUBound.--)
+		F.Intrinsic.Control.DoUntil(V.Local.iLBound,<,0)
+			V.Global.iRemainder(v.Local.iLBound).Set(0)
+			F.Intrinsic.Math.Sub(V.Local.iLBound,1,V.Local.iLBound)
+		F.Intrinsic.Control.Loop
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.Loop
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ExpectedDateSupply_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.ExpectedDateSupply.End
+
+program.sub.cmd_txtgrade_click.start
+F.Intrinsic.Control.SetErrorHandler("cmd_txtgrade_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.String.Split("Grade*!*Size","*!*",V.Local.sTitle)
+'V.Local.sTitle.Set("Grade")
+F.Intrinsic.String.Split("800*!*800","*!*",V.Local.iWidth)
+'V.Local.iWidth.Set(800)
+
+F.Intrinsic.UI.Browser("Select Grade","Con","SELECT DISTINCT GRADE, MSIZE FROM GCG_3051_MULT_MRP",V.Local.sTitle,V.Local.iWidth,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form1.txtGrade.Text(V.Local.sRet(0))
+	Gui.SS_Form1.txtSize.Text(V.Local.sRet(1))
+	Gui.SS_Form1.cmdGo.SetFocus
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmd_txtgrade_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmd_txtgrade_click.end
+
+program.sub.cmdgo_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdgo_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.SS_Form1!txtGrade.Text,!=,"")
+	v.Global.sGrade.Set(v.Screen.SS_Form1!txtGrade.Text.Trim)
+	v.Global.sSize.Set(v.Screen.SS_Form1!txtSize.Text.Trim)
+	Gui.SS_Form1.txtSize.Text("")
+	Gui.SS_Form1.txtGrade.Text("")
+	Gui.SS_Form1.txtGrade.SetFocus
+	Gui.SS_Form1..Visible(False)
+	F.Intrinsic.Control.CallSub(Loadactivity)
+	F.Intrinsic.Control.CallSub(Summarybuildstyle)
+	F.Intrinsic.Control.CallSub(Previewbuildstyle)
+	F.Intrinsic.Control.CallSub(Totals)
+	Gui.F_Mult_MRP.cmdUp.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdDown.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdClear.Enabled(FALSE)
+	Gui.F_Mult_MRP..Visible(True)
+
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdgo_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdgo_click.end
+
+program.sub.ss_form1_unload.start
+F.Intrinsic.Control.SetErrorHandler("ss_form1_unload_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sMsg.Declare(String)
+V.Local.iRet.Declare(Long)
+
+F.Intrinsic.Control.If(V.Global.bMultiRpt,=,True)
+	f.Intrinsic.String.Build("Are you sure you want to exit?{0}Generated reports will be removed.",v.Ambient.NewLine,v.Local.sMsg)
+	F.Intrinsic.UI.Msgbox(V.Local.sMsg,"Warning",1,V.Local.iRet)
+	F.Intrinsic.Control.If(V.Local.iRet,=,2)
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.EndIf
+V.Global.bMultiRpt.Set(False)
+F.ODBC.Connection!Con.Execute("DELETE FROM GCG_3051_MULTMRP_RPT")
+F.ODBC.Connection!Con.Close
+F.Intrinsic.Control.End
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("ss_form1_unload_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.End
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.ss_form1_unload.end
+
+program.sub.cmdsave_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsave_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iRows.Declare(Long)
+V.Local.dDate.Declare(Date)
+V.Local.iCount.Declare(Long,0)
+V.Local.iColor.Declare(Long)
+V.Local.iLvl.Declare(Long)
+V.Local.bNum.Declare(Boolean)
+V.Local.sProcess.Declare(String)
+V.Local.dFuture.Declare(Date)
+
+
+F.Intrinsic.Control.If(V.Screen.F_Mult_MRP!txtName.Text,!=,"","AND",V.Screen.F_Mult_MRP!txtQTY.Text,!=,"",V.Screen.F_Mult_MRP!gsfgSummary.Rows,<,19)
+	'checks to see if qty is numeric
+	F.Intrinsic.Math.IsNumeric(V.Screen.F_Mult_MRP!txtQTY.Text,V.Local.bNum)
+	F.Intrinsic.Control.If(V.Local.bNum,<>,True)
+		F.Intrinsic.UI.Msgbox("QTY must be numeric.","Invalid QTY")
+		F.Intrinsic.Control.ExitSub
+	F.Intrinsic.Control.EndIf
+
+	V.Local.dFuture.Set(V.Screen.F_Mult_MRP!dtpFuture.Value)
+
+	F.Intrinsic.String.Build("SELECT SUM(LEAD_TIME) AS LT FROM GCG_3051_MULT_MRP WHERE GRADE = '{0}' AND MSIZE = '{1}'  ",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRO("RST",V.Global.sSQL)
+	F.Intrinsic.Date.DateAdd("D",V.ODBC.Con!RST.FieldValLong!LT,V.Screen.F_Mult_MRP!dtpFuture.Value,V.Local.dDate)
+
+	'adds the info to the table
+	F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}'  ",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstSave",V.Global.sSQL)
+	F.Intrinsic.String.Build("SELECT MAX(LVL) AS AMT FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' ",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRO("rstCount",V.Global.sSQL)
+	F.Intrinsic.Control.If(V.ODBC.Con!rstCount.FieldValLong!AMT,=,0)
+		V.Local.iLvl.Set(30)
+	F.Intrinsic.Control.Else
+		F.Intrinsic.Math.Add(V.ODBC.Con!rstCount.FieldValLong!AMT,1,V.Local.iLvl)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Con!rstSave.AddNew
+	V.Local.sProcess.Set(V.Screen.F_Mult_MRP!txtName.Text)
+	F.ODBC.Con!rstSave.Set!PROCESS(v.Local.sProcess.PSQLFriendly)
+	F.ODBC.Con!rstSave.Set!QTY(V.Screen.F_Mult_MRP!txtQTY.Text)
+	F.ODBC.Con!rstSave.Set!EXP_DATE(V.Local.dDate.PervasiveDate)
+	F.ODBC.Con!rstSave.Set!FUTURE_DATE(V.Local.dFuture.PervasiveDate)
+	F.ODBC.Con!rstSave.Set!GRADE(V.Global.sGrade)
+	F.ODBC.Con!rstSave.Set!MSIZE(V.Global.sSize)
+	F.ODBC.Con!rstSave.Set!LVL(V.Local.iLvl)
+	F.ODBC.Con!rstSave.Update
+	F.ODBC.Con!rstCount.Close
+	F.ODBC.Con!rstSave.Close
+
+	'clears the txt box's so more can be entered
+	Gui.F_Mult_MRP.txtName.Text("")
+	Gui.F_Mult_MRP.txtQTY.Text("")
+	Gui.F_Mult_MRP.dtpFuture.Value(V.Ambient.Date)
+	Gui.F_Mult_MRP.cmdClear.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdUp.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdDown.Enabled(FALSE)
+
+	Gui.F_Mult_MRP.gsfgPreview.Visible(false)
+	Gui.F_Mult_MRP.gsfgSummary.Visible(false)
+	F.Intrinsic.Control.CallSub(Summarybuildstyle)
+	F.Intrinsic.Control.CallSub(Previewbuildstyle)
+	F.Intrinsic.Control.CallSub(Totals)
+	Gui.F_Mult_MRP.gsfgSummary.Visible(true)
+	Gui.F_Mult_MRP.gsfgPreview.Visible(true)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsave_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsave_click.end
+
+program.sub.cmdexport_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdexport_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iCount.Declare(Long,1)
+V.Local.iCounts.Declare(Long)
+V.Local.iMax.Declare(Long)
+V.Local.sPreview.Declare(String)
+V.Local.sSummary.Declare(String)
+V.Local.sActivity.Declare(String)
+V.Local.sSpreadsheet.Declare(String)
+V.Local.sTemplate.Declare(String)
+V.Local.sCounts.Declare(String)
+
+F.Intrinsic.UI.ShowSaveFileDialog("","*.xlsx",V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	V.Local.iCounts.Redim(-1,-1)
+	V.Local.iCounts.Redim(0,2)
+	F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgPreview.Rows,1,V.Local.iCounts(0))
+	F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgActivity.Rows,1,V.Local.iCounts(1))
+	F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgSummary.Rows,7,V.Local.iCounts(2))
+	F.Intrinsic.Variable.ArrayMax(V.Local.iCounts,V.Local.iMax)
+
+	F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iMax,"AND",V.Local.iCount,>,21)
+
+		F.Intrinsic.Control.If(V.Local.iCount,<=,V.Local.iCounts(0))
+			Gui.F_Mult_MRP.gsfgPreview.ReadRow(V.Local.iCount,V.Local.sPreview)
+		F.Intrinsic.Control.Else
+			V.Local.sPreview.Set("*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.iCount,<=,V.Local.iCounts(2))
+			Gui.F_Mult_MRP.gsfgSummary.ReadRow(V.Local.iCount,V.Local.sSummary)
+		F.Intrinsic.Control.Elseif(V.Local.iCount,>,15,"AND",V.Local.iCount,<,22)
+			F.Intrinsic.Math.Add(V.Local.iCounts(2),1,V.Local.iCounts(2))
+			Gui.F_Mult_MRP.gsfgSummary.ReadRow(V.Local.iCounts(2),V.Local.sSummary)
+		F.Intrinsic.Control.Else
+			V.Local.sSummary.Set("*!**!*")
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Control.If(V.Local.iCount,<=,V.Local.iCounts(1))
+			Gui.F_Mult_MRP.gsfgActivity.ReadRow(V.Local.iCount,V.Local.sActivity)
+		F.Intrinsic.Control.Else
+			V.Local.sActivity.Set("*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*")
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Control.If(V.Local.sSpreadsheet,=,"")
+			F.Intrinsic.String.Build("{0}*!**!*{1}*!**!*{2}",V.Local.sPreview,V.Local.sSummary,V.Local.sActivity,V.Local.sSpreadsheet)
+		F.Intrinsic.Control.Else
+			F.Intrinsic.String.Build("{0}$!${1}*!**!*{2}*!**!*{3}",V.Local.sSpreadsheet,V.Local.sPreview,V.Local.sSummary,V.Local.sActivity,V.Local.sSpreadsheet)
+		F.Intrinsic.Control.EndIf
+
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+	F.Intrinsic.Control.Loop
+
+'places the count for changing the color of qty reqd and expected date based on supply
+V.Local.iCount.Set(0)
+'loops through all of the rows on the flexgrid
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Global.iProcCount.UBound)
+	F.Intrinsic.String.Build("{0}*!*{1}",V.Local.sCounts,V.Global.iProcCount(v.Local.iCount),V.Local.sCounts)
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+
+
+	f.Intrinsic.String.Build("{0}\GCG_3051_Template.xlsx",v.Caller.GASDir,v.Local.sTemplate)
+	F.Intrinsic.String.Build("$!$$!$*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*{0}$!$$!$Grade$!${1}",V.Local.sCounts,V.Local.sSpreadsheet,V.Local.sSpreadsheet)
+	F.Automation.MSExcel.WriteSpreadsheet(V.Local.sRet,V.Local.sTemplate,V.Local.sSpreadsheet)
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdexport_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdexport_click.end
+
+program.sub.cmdclear_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdclear_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRet.Declare(String)
+V.Local.iCount.Declare(Long,30)
+V.Local.iPos.Declare(Long)
+
+F.Intrinsic.Control.If(V.Global.iRow,<>,-1)
+	F.Intrinsic.Math.Sub(V.Global.iRow,1,V.Local.iPos)
+F.Intrinsic.Control.Else
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'if mouse click is a custom field > 29 but less than 94 then Delete the fields
+F.Intrinsic.Control.If(V.uGlobal.uSummary(V.Local.iPos)!LVL,>,29,"AND",V.uGlobal.uSummary(V.Local.iPos)!LVL,<,94)
+	Gui.F_Mult_MRP.gsfgActivity.Visible(false)
+	Gui.F_Mult_MRP.gsfgSummary.Visible(false)
+	Gui.F_Mult_MRP.gsfgPreview.Visible(false)
+	'reads the row that was last selected
+	Gui.F_Mult_MRP.gsfgSummary.ReadRow(V.Global.iRow,V.Local.sRet)
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	'selects all of the criterial from the select and deletes the row from the table.
+	F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE PROCESS = '{0}' AND QTY = '{1}' AND EXP_DATE = '{2}' AND GRADE = '{3}' AND MSIZE = '{4}' ",V.Local.sRet(0).PSQLFriendly,V.Local.sRet(1),V.Local.sRet(2).PervasiveDate,V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstClear",V.Global.sSQL)
+	F.ODBC.Con!rstClear.Delete
+	F.ODBC.Con!rstClear.Close
+	'reorders the lvl for the left over custom process
+	F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' ORDER BY LVL ASC ",V.Global.sGrade,V.Global.sSize,V.Global.sSQL)
+	F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstRecount",V.Global.sSQL)
+	F.Intrinsic.Control.DoUntil(V.ODBC.Con!rstRecount.EOF,=,True)
+		F.Intrinsic.Control.If(V.ODBC.Con!rstRecount.FieldValLong!LVL,<>,V.Local.iCount)
+			F.ODBC.Con!rstRecount.Set!LVL(V.Local.iCount)
+			F.ODBC.Con!rstRecount.Update
+		F.Intrinsic.Control.EndIf
+		F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+		F.ODBC.Con!rstRecount.MoveNext
+	F.Intrinsic.Control.Loop
+	F.ODBC.Con!rstRecount.Close
+
+	'clears the txt box's so more can be entered
+	Gui.F_Mult_MRP.txtName.Text("")
+	Gui.F_Mult_MRP.txtQTY.Text("")
+	Gui.F_Mult_MRP.dtpFuture.Value(V.Ambient.Date)
+
+	'reloads all of the flexgrids
+	F.Intrinsic.Control.CallSub(Loadactivity)
+	F.Intrinsic.Control.CallSub(Summarybuildstyle)
+	F.Intrinsic.Control.CallSub(Previewbuildstyle)
+	F.Intrinsic.Control.CallSub(Totals)
+	Gui.F_Mult_MRP.gsfgActivity.Visible(true)
+	Gui.F_Mult_MRP.gsfgSummary.Visible(true)
+	Gui.F_Mult_MRP.gsfgPreview.Visible(true)
+F.Intrinsic.Control.EndIf
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdclear_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdclear_click.end
+
+program.sub.cmdreport_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdreport_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRowRet.Declare(String)
+V.Local.iPreview.Declare(Long)
+V.Local.iSummary.Declare(Long)
+V.Local.iActivity.Declare(Long)
+V.Local.iCount.Declare(Long,1)
+V.Local.iArray.Declare(Long,0)
+V.Local.iRet.Declare(Long)
+V.Local.iCol.Declare(Long)
+V.Local.iRptID.Declare(Long)
+V.Local.sCustom.Declare(String)
+
+F.Intrinsic.String.Build("{0}\custom\GCG_3051_Mult_MRP.rpt",V.Caller.BusintDir,V.Local.sCustom)
+F.Global.BI.InitializeReport("3051 Mult MRP",V.Local.sCustom,V.Local.iRptID)
+F.Global.BI.GetRunID(V.Global.BiRunID)
+f.Global.BI.StartLogging(v.Global.BiRunID,v.Local.iRptID,-1,"",v.Local.iRet)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgPreview.Rows,1,V.Local.iPreview)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgSummary.Rows,1,V.Local.iSummary)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgActivity.Rows,1,V.Local.iActivity)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgActivity.Cols,1,V.Local.iCol)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("Rst","SELECT * FROM GCG_3051_MULTMRP_RPT")
+'Adds all of the preview flexgrid into the table
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iPreview)
+	Gui.F_Mult_MRP.gsfgPreview.ReadRow(V.Local.iCount,V.Local.sRowRet)
+	F.Intrinsic.String.Split(V.Local.sRowRet,"*!*",V.Local.sRowRet)
+	F.ODBC.Con!RST.AddNew
+	F.ODBC.Con!RST.Set!BIRUNID(V.Global.BiRunID)
+	F.ODBC.Con!RST.Set!GRADE(V.Local.sRowRet(0).Trim)
+	F.ODBC.Con!RST.Set!CUSTOMER(V.Local.sRowRet(1).Trim)
+	F.ODBC.Con!RST.Set!PART(V.Local.sRowRet(2).Trim)
+	F.ODBC.Con!RST.Set!DESCRIPTION(V.Local.sRowRet(3).Trim)
+	F.ODBC.Con!RST.Set!PONUM(V.Local.sRowRet(4).Trim)
+	F.ODBC.Con!RST.Set!SALESORDER(V.Local.sRowRet(5).Trim)
+	F.ODBC.Con!RST.Set!LINE(V.Local.sRowRet(6).Trim)
+	F.ODBC.Con!RST.Set!PODATE(V.Local.sRowRet(7).PervasiveDate)
+	F.ODBC.Con!RST.Set!PROMISEDATE(V.Local.sRowRet(8).PervasiveDate)
+	F.ODBC.Con!RST.Set!SALESQTY(V.Local.sRowRet(9).Trim)
+	F.ODBC.Con!RST.Set!FILLER1(V.Local.sRowRet(10).Trim)
+	F.ODBC.Con!RST.Set!FEEDSTOCK(V.Local.sRowRet(11).Trim)
+	F.ODBC.Con!RST.Set!FEEDDESCRIPTION(V.Local.sRowRet(12).Trim)
+	F.ODBC.Con!RST.Set!YIELD(V.Local.sRowRet(13).Trim)
+	F.ODBC.Con!RST.Set!QTYREQD(V.Local.sRowRet(14).Trim)
+	F.ODBC.Con!RST.Set!EDSUP(V.Local.sRowRet(15).PervasiveDate)
+	F.ODBC.Con!RST.Set!DAYSLATE(V.Local.sRowRet(16).Trim)
+	F.ODBC.Con!RST.Set!DATEREQD(V.Local.sRowRet(17).PervasiveDate)
+	F.ODBC.Con!RST.Set!PRINTED(V.Local.sRowRet(18).Trim)
+	F.ODBC.Con!RST.Set!TYPE("P")
+	F.Intrinsic.Control.If(V.Local.sRowRet(19),<>,"")
+		F.ODBC.Con!RST.Set!DATE_RELEASED(V.Local.sRowRet(19).PervasiveDate)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Con!RST.Update
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+V.Local.iCount.Set(1)
+V.Local.iArray.Set(0)
+V.Local.sRowRet.Redim(0,0)
+'Adds all of the Summary flexgrid into the table
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iSummary)
+	Gui.F_Mult_MRP.gsfgSummary.ReadRow(V.Local.iCount,V.Local.sRowRet)
+	F.Intrinsic.String.Split(V.Local.sRowRet,"*!*",V.Local.sRowRet)
+	F.ODBC.Con!RST.AddNew
+	F.ODBC.Con!RST.Set!BIRUNID(V.Global.BiRunID)
+	F.ODBC.Con!RST.Set!PROCESS(V.Local.sRowRet(0).Trim)
+	F.ODBC.Con!RST.Set!QTY(V.Local.sRowRet(1).Trim)
+	F.Intrinsic.Control.If(V.Local.sRowRet(2),<>,"")
+		F.ODBC.Con!RST.Set!EDLT(V.Local.sRowRet(2).PervasiveDate)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Control.If(V.Local.sRowRet(3),<>,"")
+		F.ODBC.Con!RST.Set!FUTURE_DATE(V.Local.sRowRet(3).PervasiveDate)
+	F.Intrinsic.Control.EndIf
+	F.ODBC.Con!RST.Set!TYPE("S")
+	F.ODBC.Con!RST.Update
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+V.Local.iCount.Set(1)
+V.Local.iArray.Set(0)
+V.Local.sRowRet.Redim(0,0)
+'Adds all of the Activity flexgrid into the table
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iActivity)
+	Gui.F_Mult_MRP.gsfgActivity.ReadRow(V.Local.iCount,V.Local.sRowRet)
+	F.Intrinsic.String.Split(V.Local.sRowRet,"*!*",V.Local.sRowRet)
+	F.ODBC.Con!RST.AddNew
+	F.ODBC.Con!RST.Set!BIRUNID(V.Global.BiRunID)
+	V.Local.iArray.Set(0)
+	F.Intrinsic.Control.DoUntil(V.Local.iArray,>,V.Local.iCol)
+		F.Intrinsic.Control.SelectCase(V.Local.iArray)
+			F.Intrinsic.Control.Case(0)
+				F.ODBC.Con!RST.Set!COL1(V.Local.sRowRet(0).Trim)
+			F.Intrinsic.Control.Case(1)
+				F.ODBC.Con!RST.Set!COL2(V.Local.sRowRet(1).Trim)
+			F.Intrinsic.Control.Case(2)
+				F.ODBC.Con!RST.Set!COL3(V.Local.sRowRet(2).Trim)
+			F.Intrinsic.Control.Case(3)
+				F.ODBC.Con!RST.Set!COL4(V.Local.sRowRet(3).Trim)
+			F.Intrinsic.Control.Case(4)
+				F.ODBC.Con!RST.Set!COL5(V.Local.sRowRet(4).Trim)
+			F.Intrinsic.Control.Case(5)
+				F.ODBC.Con!RST.Set!COL6(V.Local.sRowRet(5).Trim)
+			F.Intrinsic.Control.Case(6)
+				F.ODBC.Con!RST.Set!COL7(V.Local.sRowRet(6).Trim)
+			F.Intrinsic.Control.Case(7)
+				F.ODBC.Con!RST.Set!COL8(V.Local.sRowRet(7).Trim)
+			F.Intrinsic.Control.Case(8)
+				F.ODBC.Con!RST.Set!COL9(V.Local.sRowRet(8).Trim)
+			F.Intrinsic.Control.Case(9)
+				F.ODBC.Con!RST.Set!COL10(V.Local.sRowRet(9).Trim)
+			F.Intrinsic.Control.Case(10)
+				F.ODBC.Con!RST.Set!COL11(V.Local.sRowRet(10).Trim)
+			F.Intrinsic.Control.Case(11)
+				F.ODBC.Con!RST.Set!COL12(V.Local.sRowRet(11).Trim)
+			F.Intrinsic.Control.Case(12)
+				F.ODBC.Con!RST.Set!COL13(V.Local.sRowRet(12).Trim)
+			F.Intrinsic.Control.Case(13)
+				F.ODBC.Con!RST.Set!COL14(V.Local.sRowRet(13).Trim)
+			F.Intrinsic.Control.Case(14)
+				F.ODBC.Con!RST.Set!COL15(V.Local.sRowRet(14).Trim)
+			F.Intrinsic.Control.Case(15)
+				F.ODBC.Con!RST.Set!COL16(V.Local.sRowRet(15).Trim)
+		F.Intrinsic.Control.EndSelect
+		F.Intrinsic.Math.Add(V.Local.iArray,1,V.Local.iArray)
+	F.Intrinsic.Control.Loop
+	F.ODBC.Con!RST.Set!TYPE("A")
+	F.ODBC.Con!RST.Update
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+F.ODBC.Con!RST.Close
+F.Global.BI.StopLogging(v.Local.iRet)
+F.Global.BI.RunReportPreProcessor(V.Global.BiRunID,V.Local.iRet,"","","",-1,False,"",-1,"",-1,"","",V.Local.iRet)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdreport_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdreport_click.end
+
+Program.Sub.PreviewColor.Start
+F.Intrinsic.Control.SetErrorHandler("PreviewColor_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iUBound.Declare(Long)
+V.Local.iCount.Declare(Long,1)
+V.Local.iTemp.Declare(Long,1)
+V.Local.iSumm.Declare(Long,0)
+V.Global.Process.Set(0)
+
+V.Local.iUBound.Set(V.Screen.F_Mult_MRP!gsfgPreview.Rows)
+F.Intrinsic.Math.Sub(V.Local.iUBound,1,V.Local.iUBound)
+
+'loops through all of the rows on the flexgrid
+F.Intrinsic.Control.DoUntil(V.Local.iTemp,>,V.Local.iUBound)
+	'sets the color from the color column
+	Gui.F_Mult_MRP.gsfgPreview.GSGOverrideProperty(14,V.Local.iTemp,"BackColor",V.uGlobal.uPreview(v.Local.iSumm)!Color)
+	Gui.F_Mult_MRP.gsfgPreview.GSGOverrideProperty(15,V.Local.iTemp,"BackColor",V.uGlobal.uPreview(v.Local.iSumm)!Color)
+
+	'if days late is negative it turns the cell blue, positive red
+	F.Intrinsic.Control.If(V.uGlobal.uPreview(v.Local.iSumm)!DAYS_LATE,>=,0)
+		Gui.F_Mult_MRP.gsfgPreview.GSGOverrideProperty(16,V.Local.iTemp,"BackColor",V.Color.Pink)
+	F.Intrinsic.Control.Else
+		Gui.F_Mult_MRP.gsfgPreview.GSGOverrideProperty(16,V.Local.iTemp,"BackColor",V.Global.iBackColor(0))
+	F.Intrinsic.Control.EndIf
+	Gui.F_Mult_MRP.gsfgPreview.ApplyStyle(V.Local.iTemp,2)
+	F.Intrinsic.Math.Add(V.Local.iSumm,1,V.Local.iSumm)
+	F.Intrinsic.Math.Add(V.Local.iTemp,1,V.Local.iTemp)
+F.Intrinsic.Control.Loop
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("PreviewColor_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.PreviewColor.End
+
+program.sub.cmdsize_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdsize_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sTitle.Declare(String)
+V.Local.iWidth.Declare(Long)
+V.Local.sRet.Declare(String)
+
+F.Intrinsic.String.Split("Size*!*Grade","*!*",V.Local.sTitle)
+'V.Local.sTitle.Set("Grade")
+F.Intrinsic.String.Split("800*!*800","*!*",V.Local.iWidth)
+'V.Local.iWidth.Set(800)
+
+F.Intrinsic.UI.Browser("Select Size","Con","SELECT DISTINCT MSIZE, GRADE FROM GCG_3051_MULT_MRP",V.Local.sTitle,V.Local.iWidth,V.Local.sRet)
+F.Intrinsic.Control.If(V.Local.sRet,!=,"***CANCEL***")
+	F.Intrinsic.String.Split(V.Local.sRet,"*!*",V.Local.sRet)
+	Gui.SS_Form1.txtGrade.Text(V.Local.sRet(1))
+	Gui.SS_Form1.txtSize.Text(V.Local.sRet(0))
+	Gui.SS_Form1.cmdGo.SetFocus
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdsize_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdsize_click.end
+
+program.sub.gsfgsummary_mouseup.start
+F.Intrinsic.Control.SetErrorHandler("gsfgsummary_mouseup_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRow.Declare(String)
+V.Local.iPos.Declare(Long)
+V.Local.iMin.Declare(Long)
+V.Local.iMax.Declare(Long)
+V.Local.sOrd.Declare(String)
+
+F.Intrinsic.Math.Sub(V.Args.MouseRow.Long,1,V.Local.iPos)
+F.Intrinsic.Control.If(V.Local.iPos,=,-1)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.EndIf
+
+'if mouse click is a custom field > 29 but less than 94 then add to fields
+F.Intrinsic.Control.If(V.uGlobal.uSummary(V.Local.iPos)!LVL,>,29,"AND",V.uGlobal.uSummary(V.Local.iPos)!LVL,<,94)
+
+	'sets the last clicked row in summary to be used when clearing
+	V.Global.iRow.Set(V.Args.MouseRow.Long)
+
+	'reads row and puts it in the fields
+	Gui.F_Mult_MRP.gsfgSummary.ReadRow(V.Global.iRow,V.Local.sRow)
+	F.Intrinsic.String.Split(V.Local.sRow,"*!*",V.Local.sRow)
+
+	Gui.F_Mult_MRP.txtName.Text(V.Local.sRow(0))
+	Gui.F_Mult_MRP.txtQTY.Text(V.Local.sRow(1))
+	Gui.F_Mult_MRP.dtpFuture.Value(V.Local.sRow(3))
+	'finds the min and max ordinals for group 2 which is the data section
+	F.Intrinsic.Variable.UDTMultiSeek(V.uGlobal.uSummary!GROUP,2,V.Local.sOrd)
+	F.Intrinsic.String.Split(V.Local.sOrd,"*!*",V.Local.sOrd)
+	V.Local.iMin.Set(V.Local.sOrd(0))
+	V.Local.iMax.Set(V.Local.sOrd(V.Local.sOrd.UBound))
+	'if position is the min ordinal then don't allow move up
+	F.Intrinsic.Control.If(V.Local.iPos,=,V.Local.iMin)
+		Gui.F_Mult_MRP.cmdUp.Enabled(FALSE)
+	F.Intrinsic.Control.Else
+		Gui.F_Mult_MRP.cmdUp.Enabled(TRUE)
+	F.Intrinsic.Control.EndIf
+	'if position is the max ordinal then don't allow move down
+	F.Intrinsic.Control.If(V.Local.iPos,=,V.Local.iMax)
+		Gui.F_Mult_MRP.cmdDown.Enabled(FALSE)
+	F.Intrinsic.Control.Else
+		Gui.F_Mult_MRP.cmdDown.Enabled(TRUE)
+	F.Intrinsic.Control.EndIf
+	'allow delete when something valid is clicked
+	Gui.F_Mult_MRP.cmdClear.Enabled(TRUE)
+	
+
+F.Intrinsic.Control.Else
+	
+	Gui.F_Mult_MRP.txtName.Text("")
+	Gui.F_Mult_MRP.txtQTY.Text("")
+	Gui.F_Mult_MRP.dtpFuture.Value(V.Ambient.Date)
+	V.Global.iRow.Set(-1)
+	Gui.F_Mult_MRP.cmdUp.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdDown.Enabled(FALSE)
+	Gui.F_Mult_MRP.cmdClear.Enabled(FALSE)
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgsummary_mouseup_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.gsfgsummary_mouseup.end
+
+program.sub.cmdrefresh_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdrefresh_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+'refreshes the screen with updated information
+Gui.F_Mult_MRP.gsfgActivity.Visible(FALSE)
+Gui.F_Mult_MRP.gsfgPreview.Visible(FALSE)
+Gui.F_Mult_MRP.gsfgSummary.Visible(FALSE)
+
+F.Intrinsic.Control.CallSub(Loadactivity)
+F.Intrinsic.Control.CallSub(Summarybuildstyle)
+F.Intrinsic.Control.CallSub(Previewbuildstyle)
+F.Intrinsic.Control.CallSub(Totals)
+
+Gui.F_Mult_MRP.gsfgActivity.Visible(TRUE)
+Gui.F_Mult_MRP.gsfgPreview.Visible(TRUE)
+Gui.F_Mult_MRP.gsfgSummary.Visible(TRUE)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdrefresh_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	Function.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdrefresh_click.end
+
+Program.Sub.Totals.Start
+F.Intrinsic.Control.SetErrorHandler("Totals_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iCount.Declare(Long,1)
+V.Local.iPlace.Declare(Long)
+V.Local.iSupply.Declare(Long)
+V.Local.iDemand.Declare(Long)
+V.Local.iSubtotal.Declare(Long)
+V.Local.iSafety.Declare(Long)
+V.Local.iTotal.Declare(Long)
+V.Local.iTemp.Declare(Long)
+V.Local.sFeedstock.Declare(String)
+V.Local.iPreview.Declare(Long)
+V.Local.iTop.Declare(Long)
+V.Local.iColor.Declare(Long)
+V.Local.iLvl.Declare(Long,94)
+V.Local.iRows.Declare(Long)
+
+F.Intrinsic.UI.RGB(0,255,255,V.Local.iColor)
+
+'adding 6 totals to the grid
+F.Intrinsic.Math.Add(V.Screen.F_Mult_MRP!gsfgSummary.Rows,6,V.Local.iTemp)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgSummary.Rows,1,V.Local.iRows)
+Gui.F_Mult_MRP.gsfgSummary.Rows(V.Local.iTemp)
+F.Intrinsic.Math.Sub(V.Local.iTemp,6,V.Local.iPlace)
+F.Intrinsic.Math.Sub(V.Local.iTemp,7,V.Local.iTop)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Total Supply")
+V.Local.iCount.Set(1)
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iTop)
+	Gui.F_Mult_MRP.gsfgSummary.GetTextMatrix(1,V.Local.iCount,V.Local.iTemp)
+	F.Intrinsic.Math.Add(V.Local.iSupply,V.Local.iTemp,V.Local.iSupply)
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.Local.iSupply)
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Total Supply")
+V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.Local.iSupply)
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+F.Intrinsic.Math.Add(V.Local.iLvl,1,V.Local.iLvl)
+F.Intrinsic.Math.Add(V.Local.iPlace,1,V.Local.iPlace)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Total Demand")
+V.Local.iCount.Set(1)
+F.Intrinsic.Math.Sub(V.Screen.F_Mult_MRP!gsfgPreview.Rows,1,V.Local.iPreview)
+F.Intrinsic.Control.DoUntil(V.Local.iCount,>,V.Local.iPreview)
+	F.Intrinsic.Control.If(V.uGlobal.uPreview.UBound,<>,-1)
+		Gui.F_Mult_MRP.gsfgPreview.GetTextMatrix(14,V.Local.iCount,V.Local.iTemp)
+	F.Intrinsic.Control.Else
+		V.Local.iTemp.Set(0)
+	F.Intrinsic.Control.EndIf
+	F.Intrinsic.Math.Add(V.Local.iDemand,V.Local.iTemp,V.Local.iDemand)
+	F.Intrinsic.Math.Add(V.Local.iCount,1,V.Local.iCount)
+F.Intrinsic.Control.Loop
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.Local.iDemand)
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Total Demand")
+V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.Local.iDemand)
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+F.Intrinsic.Math.Add(V.Local.iLvl,1,V.Local.iLvl)
+F.Intrinsic.Math.Add(V.Local.iPlace,1,V.Local.iPlace)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Subtotal")
+F.Intrinsic.Math.Sub(V.Local.iSupply,V.Local.iDemand,V.Local.iSubtotal)
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.Local.iSubtotal)
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Subtotal")
+V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.Local.iSubtotal)
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+F.Intrinsic.Math.Add(V.Local.iLvl,1,V.Local.iLvl)
+F.Intrinsic.Math.Add(V.Local.iPlace,1,V.Local.iPlace)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Safety Stock")
+'F.Intrinsic.Control.If(V.uGlobal.uPreview.UBound,<>,-1)
+'	Gui.F_Mult_MRP.gsfgPreview.GetTextMatrix(11,1,V.Local.sFeedstock)
+'F.Intrinsic.Control.Else
+'	V.Local.sFeedstock.Set("")
+'F.Intrinsic.Control.EndIf
+V.Local.sFeedstock.Set(V.uGlobal.uActivity(0)!COL2)
+F.Intrinsic.String.Build("SELECT QTY_SAFETY FROM INVENTORY_MSTR WHERE PART = '{0}' ",V.Local.sFeedstock,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("rstSafe",V.Global.sSQL)
+F.Intrinsic.Control.If(V.ODBC.Con!rstSafe.EOF,=,False)
+	V.Local.iSafety.Set(V.ODBC.Con!rstSafe.FieldVal!QTY_SAFETY)
+F.Intrinsic.Control.Else
+	V.Local.iSafety.Set(0)
+F.Intrinsic.Control.EndIf
+F.ODBC.Con!rstSafe.Close
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Safety Stock")
+V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.Local.iSafety)
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.Local.iSafety)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+F.Intrinsic.Math.Add(V.Local.iLvl,1,V.Local.iLvl)
+F.Intrinsic.Math.Add(V.Local.iPlace,1,V.Local.iPlace)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Total")
+F.Intrinsic.Math.Sub(V.Local.iSubtotal,V.Local.iSafety,V.Local.iTotal)
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.Local.iTotal)
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Total")
+V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.Local.iTotal)
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Math.Add(V.Local.iRows,1,V.Local.iRows)
+F.Intrinsic.Math.Add(V.Local.iLvl,1,V.Local.iLvl)
+F.Intrinsic.Math.Add(V.Local.iPlace,1,V.Local.iPlace)
+
+Gui.F_Mult_MRP.gsfgSummary.TextMatrix(0,V.Local.iPlace,"Total Usage")
+V.uGlobal.uSummary.RedimPreserve(0,V.Local.iRows)
+F.Intrinsic.String.Build("SELECT (QTY_USAGE_MO_01 + QTY_USAGE_MO_02 + QTY_USAGE_MO_03 + QTY_USAGE_MO_04 + QTY_USAGE_MO_05 + QTY_USAGE_MO_06 + QTY_USAGE_MO_07 + QTY_USAGE_MO_08 + QTY_USAGE_MO_09 + QTY_USAGE_MO_10 + QTY_USAGE_MO_11 + QTY_USAGE_MO_12) AS USAGE FROM INVENTORY_MSTR WHERE PART = '{0}' ",V.Local.sFeedstock,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRO("rstUsage",V.Global.sSQL)
+F.Intrinsic.Control.If(V.ODBC.Con!rstUsage.EOF,=,False)
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,V.ODBC.Con!rstUsage.FieldVal!USAGE)
+	V.uGlobal.uSummary(V.Local.iRows)!QTY.Set(V.ODBC.Con!rstUsage.FieldVal!USAGE)
+F.Intrinsic.Control.Else
+	Gui.F_Mult_MRP.gsfgSummary.TextMatrix(1,V.Local.iPlace,"0")
+	V.uGlobal.uSummary(v.Local.iRows)!QTY.Set(0)
+F.Intrinsic.Control.EndIf
+V.uGlobal.uSummary(V.Local.iRows)!PROCESS.Set("Total Usage")
+V.uGlobal.uSummary(V.Local.iRows)!LVL.Set(V.Local.iLvl)
+V.uGlobal.uSummary(V.Local.iRows)!GROUP.Set(3)
+F.ODBC.Con!rstUsage.Close
+Gui.F_Mult_MRP.gsfgSummary.ApplyStyle(V.Local.iPlace,2)
+Gui.F_Mult_MRP.gsfgSummary.RowColor(V.Local.iPlace,V.Local.iColor,V.Color.Black)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("Totals_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+Program.Sub.Totals.End
+
+program.sub.cmdup_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdup_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iPos.Declare(Long)
+V.Local.iOriginal.Declare(Long)
+V.Local.iNew.Declare(Long)
+
+F.Intrinsic.Math.Sub(V.Global.iRow,1,V.Local.iPos)
+'sets the original and new positions
+V.Local.iOriginal.Set(V.uGlobal.uSummary(V.Local.iPos)!LVL)
+F.Intrinsic.Math.Sub(V.Local.iOriginal,1,V.Local.iNew)
+'selects the old and new postions at the same time
+F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' AND LVL = '{2}' ",V.Global.sGrade,V.Global.sSize,V.Local.iOriginal,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstOrig",V.Global.sSQL)
+
+F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' AND LVL = '{2}' ",V.Global.sGrade,V.Global.sSize,V.Local.iNew,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstNew",V.Global.sSQL)
+'updates both positions at the same time
+F.ODBC.Con!rstOrig.Set!LVL(V.Local.iNew)
+F.ODBC.Con!rstNew.Set!LVL(V.Local.iOriginal)
+
+F.ODBC.Con!rstOrig.Update
+F.ODBC.Con!rstNew.Update
+
+F.ODBC.Con!rstOrig.Close
+F.ODBC.Con!rstNew.Close
+
+'clears the txt box's so more can be entered
+Gui.F_Mult_MRP.txtName.Text("")
+Gui.F_Mult_MRP.txtQTY.Text("")
+Gui.F_Mult_MRP.dtpFuture.Value(V.Ambient.Date)
+
+
+Gui.F_Mult_MRP.gsfgSummary.Visible(FALSE)
+Gui.F_Mult_MRP.gsfgPreview.Visible(FALSE)
+F.Intrinsic.Control.CallSub(Summarybuildstyle)
+F.Intrinsic.Control.CallSub(Previewbuildstyle)
+F.Intrinsic.Control.CallSub(Totals)
+Gui.F_Mult_MRP.gsfgPreview.Visible(TRUE)
+Gui.F_Mult_MRP.gsfgSummary.Visible(TRUE)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdup_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmdup_click.end
+
+program.sub.cmddown_click.start
+F.Intrinsic.Control.SetErrorHandler("cmddown_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.iPos.Declare(Long)
+V.Local.iOriginal.Declare(Long)
+V.Local.iNew.Declare(Long)
+
+F.Intrinsic.Math.Sub(V.Global.iRow,1,V.Local.iPos)
+'gets the original position from the udt and sets what the new position will be
+V.Local.iOriginal.Set(V.uGlobal.uSummary(V.Local.iPos)!LVL)
+F.Intrinsic.Math.Add(V.Local.iOriginal,1,V.Local.iNew)
+'select both spots that are going to be moved
+F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' AND LVL = '{2}' ",V.Global.sGrade,V.Global.sSize,V.Local.iOriginal,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstOrig",V.Global.sSQL)
+
+F.Intrinsic.String.Build("SELECT * FROM GCG_3051_MULTMRP_SUM WHERE GRADE = '{0}' AND MSIZE = '{1}' AND LVL = '{2}' ",V.Global.sGrade,V.Global.sSize,V.Local.iNew,V.Global.sSQL)
+F.ODBC.Connection!Con.OpenLocalRecordsetRW("rstNew",V.Global.sSQL)
+'updates both positions at the same time
+F.ODBC.Con!rstOrig.Set!LVL(V.Local.iNew)
+F.ODBC.Con!rstNew.Set!LVL(V.Local.iOriginal)
+
+F.ODBC.Con!rstOrig.Update
+F.ODBC.Con!rstNew.Update
+
+F.ODBC.Con!rstOrig.Close
+F.ODBC.Con!rstNew.Close
+
+'clears the txt box's so more can be entered
+Gui.F_Mult_MRP.txtName.Text("")
+Gui.F_Mult_MRP.txtQTY.Text("")
+Gui.F_Mult_MRP.dtpFuture.Value(V.Ambient.Date)
+
+Gui.F_Mult_MRP.gsfgSummary.Visible(FALSE)
+Gui.F_Mult_MRP.gsfgPreview.Visible(FALSE)
+F.Intrinsic.Control.CallSub(Summarybuildstyle)
+F.Intrinsic.Control.CallSub(Previewbuildstyle)
+F.Intrinsic.Control.CallSub(Totals)
+Gui.F_Mult_MRP.gsfgPreview.Visible(TRUE)
+Gui.F_Mult_MRP.gsfgSummary.Visible(TRUE)
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmddown_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(F_mult_mrp_unload)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.cmddown_click.end
+
+program.sub.cmdmultrpt_click.start
+F.Intrinsic.Control.SetErrorHandler("cmdmultrpt_click_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+F.Intrinsic.Control.If(V.Screen.SS_Form1!txtGrade.Text,!=,"")
+
+	v.Global.sGrade.Set(v.Screen.SS_Form1!txtGrade.Text.Trim)
+	v.Global.sSize.Set(v.Screen.SS_Form1!txtSize.Text.Trim)
+	Gui.SS_Form1.txtSize.Text("")
+	Gui.SS_Form1.txtGrade.Text("")
+	Gui.SS_Form1.txtGrade.SetFocus
+
+	F.Intrinsic.Control.CallSub(Loadactivity)
+	F.Intrinsic.Control.CallSub(Summarybuildstyle)
+	F.Intrinsic.Control.CallSub(Previewbuildstyle)
+	F.Intrinsic.Control.CallSub(Totals)
+	
+	F.Intrinsic.Control.CallSub(Cmdreport_click)
+
+	V.Global.bMultiRpt.Set(True)
+
+F.Intrinsic.Control.EndIf
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("cmdmultrpt_click_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+	F.Intrinsic.Control.CallSub(Ss_form1_unload)
+Function.Intrinsic.Control.EndIf
+
+program.sub.cmdmultrpt_click.end
+
+program.sub.gsfgpreview_mouseup.start
+F.Intrinsic.Control.SetErrorHandler("gsfgpreview_mouseup_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+V.Local.sRow.Declare(String)
+V.Local.sParam.Declare(String)
+
+
+
+
+'''row
+'F.Intrinsic.Control.If(V.Args.key,=,0)
+'	F.Intrinsic.Control.ExitSub
+'F.Intrinsic.Control.endif
+
+F.Intrinsic.Control.If(V.Args.MouseRow,=,0)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.endif
+
+F.Intrinsic.Control.If(V.Args.MouseCol,<>,2)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.endif
+
+
+'means that we are in Part 'get loc
+Gui.F_Mult_MRP.gsfgpreview.GetTextMatrix(V.Args.MouseCol,V.Args.MouseRow,V.Local.sRow)
+F.Intrinsic.Control.If(V.Local.sRow.Trim,<>,"")
+	'format params for callwrapper 300011 (S&D) passing ?Part!*!Loc!*!M?
+	F.Intrinsic.String.Build("{0}!*!{1}!*!M",V.Local.sRow,"*!*ZDR*!*",V.Local.sParam)
+	F.Global.General.CallWrapperSync(300011,V.Local.sParam)
+Function.Intrinsic.Control.EndIf
+
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgpreview_mouseup_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.gsfgpreview_mouseup.end
+
+program.sub.gsfgactivity_mouseup.start
+F.Intrinsic.Control.SetErrorHandler("gsfgactivity_mouseup_Err")
+F.Intrinsic.Control.ClearErrors
+
+V.Local.sError.Declare(String)
+
+
+V.Local.sRow.Declare(String)
+V.Local.sParam.Declare(String)
+V.Local.lmod.Declare(Long)
+V.Local.lNum.Declare(Long)
+
+
+F.Intrinsic.Control.If(V.Args.MouseRow,<>,1)
+	F.Intrinsic.Control.ExitSub
+F.Intrinsic.Control.endif
+
+
+F.Intrinsic.Math.Add(V.Args.MouseCol,1,V.Local.lNum)
+F.Intrinsic.Math.Mod(V.Local.lNum,2,V.Local.lmod)
+F.Intrinsic.Control.If(V.Local.lmod,<>,0)
+	F.Intrinsic.Control.ExitSub
+Function.Intrinsic.Control.EndIf
+
+'F.Intrinsic.Control.If(V.Args.Column,<>,1)
+'	F.Intrinsic.Control.ExitSub
+'F.Intrinsic.Control.endif
+
+
+Gui.F_Mult_MRP.gsfgactivity.GetTextMatrix(V.Args.MouseCol,V.Args.MouseRow,V.Local.sRow)
+F.Intrinsic.Control.If(V.Local.sRow.Trim,<>,"")
+	'format params for callwrapper 300011 (S&D) passing ?Part!*!Loc!*!M?
+	F.Intrinsic.String.Build("{0}!*!{1}!*!M",V.Local.sRow,"*!*ZDR*!*",V.Local.sParam)
+	F.Global.General.CallWrapperSync(300011,V.Local.sParam)
+Function.Intrinsic.Control.EndIf
+
+
+F.Intrinsic.Control.ExitSub
+
+F.Intrinsic.Control.Label("gsfgactivity_mouseup_Err")
+F.Intrinsic.Control.If(V.Ambient.ErrorNumber,<>,0)
+	Function.Intrinsic.String.Concat("Project: GCG_3051_Multi_MRP.gas",V.Ambient.Newline,V.Ambient.Newline,"Subroutine: ",V.Ambient.CurrentSubroutine,V.Ambient.NewLine,"Error Occurred ",V.Ambient.ErrorNumber," with description ",V.Ambient.ErrorDescription,V.Local.sError)
+	F.Intrinsic.UI.Msgbox(V.Local.sError)
+Function.Intrinsic.Control.EndIf
+
+
+program.sub.gsfgactivity_mouseup.end
+
+Program.Sub.Comments.Start
+${$0$}$GCG_7261_Multi_MRP$}$Strider$}$8/31/2015
+${$2$}$$}$$}$1$}$4$}$SQL$}$10/21/2015 4:14:21 PM$}$GCG_7261_MULT_MRP
+GCG_7261_MULTMRP_RPT
+GCG_7261_MULTMRP_SUM
+${$2$}$$}$$}$0$}$2$}$GAS$}$10/21/2015 4:12:57 PM$}$GCG_7261_MULTI_MRP_MAINT.GAS
+${$3$}$0$}$$}$0$}$-1$}$$}$12:00:00 AM$}$Modification of ARC Project 1507 original program GCG_6963-2_Multi_MRP.gas
+This adds in the ability to save the Summary for later use.
+${$4$}$0$}$$}$0$}$-1$}$Strider$}$10/21/2015 4:15:26 PM$}$Modificaiton of ARC Project 1507
+Adding in the ability to save Summary for later use.
+Program.Sub.Comments.End
+Program.Sub.ScreenSS.Start
+SS_Form1{{CAPTION::Select Grade
+SS_Form1.CTRL{{NAME::txtGrade\\TYPE::2\\CAPTION::Select Grade\\TABSTOP::1\\GROUP::-1\\BROWSER::1\\SIZE::1
+SS_Form1.CTRL{{NAME::cmdGo\\TYPE::5\\CAPTION::Go\\TABSTOP::2\\GROUP::-1\\BROWSER::0\\SIZE::1
+
+Program.Sub.ScreenSS.End
+
